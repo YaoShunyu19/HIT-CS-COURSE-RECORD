@@ -1,0 +1,13 @@
+rnn
+Epoch: 1	 Iter: 294	 Valid accuracy: 46.9136%
+Epoch:[1/3] Batch: [294/589] loss = 1.2741 lr = 0.0010000 acc = 0.531
+Epoch: 1	 Iter: 588	 Valid accuracy: 66.8658%
+Epoch:[1/3] Batch: [588/589] loss = 0.9649 lr = 0.0010000 acc = 0.641
+Epoch: 2	 Iter: 294	 Valid accuracy: 67.4632%
+Epoch:[2/3] Batch: [294/589] loss = 1.0925 lr = 0.0001000 acc = 0.625
+Epoch: 2	 Iter: 588	 Valid accuracy: 68.3951%
+Epoch:[2/3] Batch: [588/589] loss = 0.9753 lr = 0.0001000 acc = 0.609
+Epoch: 3	 Iter: 294	 Valid accuracy: 68.3712%
+Epoch:[3/3] Batch: [294/589] loss = 0.7085 lr = 0.0000100 acc = 0.766
+Epoch: 3	 Iter: 588	 Valid accuracy: 68.4110%
+Epoch:[3/3] Batch: [588/589] loss = 0.9929 lr = 0.0000100 acc = 0.688

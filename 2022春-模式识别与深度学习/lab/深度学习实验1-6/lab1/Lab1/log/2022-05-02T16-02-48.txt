@@ -1,0 +1,32 @@
+Epoch: 1	 Iter: 937	 Valid accuracy: 93.2300%
+Epoch:[1/8] Batch: [937/1875] loss = 0.4558 lr = 0.0001000 acc = 0.875
+Epoch: 1	 Iter: 1874	 Valid accuracy: 95.0500%
+Epoch:[1/8] Batch: [1874/1875] loss = 0.0154 lr = 0.0001000 acc = 1.000
+Epoch: 2	 Iter: 937	 Valid accuracy: 96.3300%
+Epoch:[2/8] Batch: [937/1875] loss = 0.1709 lr = 0.0001000 acc = 0.875
+Epoch: 2	 Iter: 1874	 Valid accuracy: 96.7400%
+Epoch:[2/8] Batch: [1874/1875] loss = 0.0597 lr = 0.0001000 acc = 0.969
+Epoch: 3	 Iter: 937	 Valid accuracy: 97.2900%
+Epoch:[3/8] Batch: [937/1875] loss = 0.0523 lr = 0.0000200 acc = 1.000
+Epoch: 3	 Iter: 1874	 Valid accuracy: 97.4900%
+Epoch:[3/8] Batch: [1874/1875] loss = 0.0016 lr = 0.0000200 acc = 1.000
+Epoch: 4	 Iter: 937	 Valid accuracy: 97.5000%
+Epoch:[4/8] Batch: [937/1875] loss = 0.0491 lr = 0.0000200 acc = 0.969
+Epoch: 4	 Iter: 1874	 Valid accuracy: 97.5800%
+Epoch:[4/8] Batch: [1874/1875] loss = 0.0098 lr = 0.0000200 acc = 1.000
+Epoch: 5	 Iter: 937	 Valid accuracy: 97.6500%
+Epoch:[5/8] Batch: [937/1875] loss = 0.1302 lr = 0.0000040 acc = 0.969
+Epoch: 5	 Iter: 1874	 Valid accuracy: 97.6500%
+Epoch:[5/8] Batch: [1874/1875] loss = 0.0476 lr = 0.0000040 acc = 0.969
+Epoch: 6	 Iter: 937	 Valid accuracy: 97.7400%
+Epoch:[6/8] Batch: [937/1875] loss = 0.0114 lr = 0.0000040 acc = 1.000
+Epoch: 6	 Iter: 1874	 Valid accuracy: 97.7100%
+Epoch:[6/8] Batch: [1874/1875] loss = 0.0089 lr = 0.0000040 acc = 1.000
+Epoch: 7	 Iter: 937	 Valid accuracy: 97.7500%
+Epoch:[7/8] Batch: [937/1875] loss = 0.0190 lr = 0.0000008 acc = 1.000
+Epoch: 7	 Iter: 1874	 Valid accuracy: 97.7400%
+Epoch:[7/8] Batch: [1874/1875] loss = 0.0048 lr = 0.0000008 acc = 1.000
+Epoch: 8	 Iter: 937	 Valid accuracy: 97.7300%
+Epoch:[8/8] Batch: [937/1875] loss = 0.0359 lr = 0.0000008 acc = 1.000
+Epoch: 8	 Iter: 1874	 Valid accuracy: 97.7200%
+Epoch:[8/8] Batch: [1874/1875] loss = 0.0359 lr = 0.0000008 acc = 1.000
