@@ -1,0 +1,412 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2020/11/29 09:35:50
+// Design Name: 
+// Module Name: PJ11
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+module div_frequence_show(clk,d_clk,rst);
+//div frequence
+input clk;
+output d_clk;
+input rst;
+reg [30:0]cnt;
+reg d_clk;
+
+always @(posedge clk)
+    if(rst)
+        begin 
+            d_clk<=0;
+            cnt<=0;
+        end
+    else 
+        begin 
+            if(cnt==9000)
+            begin
+                d_clk<=~d_clk;
+                cnt<=0;
+            end
+            else
+                cnt<=cnt+1;
+        end
+endmodule
+
+module SHOW(swit,clk,tip_lamp_choose,tip_lamp,blue,led_pin);
+output blue;
+output [7:0] led_pin;
+input [2:0]swit;//0:LOCK 1:PASS 2:FAIL
+input clk;
+
+output [3:0] tip_lamp_choose;
+output [7:0] tip_lamp;
+reg [7:0] led_pin;
+reg[3:0]tip_lamp_choose;
+reg [3:0] copy;
+reg blue;
+reg [7:0]tip_lamp;
+reg rst_div_show;
+wire div_clk;
+
+initial
+    begin
+        led_pin<=8'b11111111;
+        blue<=0;
+        copy=4'b0000;
+        rst_div_show<=1;
+        tip_lamp_choose=4'b0111;
+        tip_lamp=8'b01110001;
+    end
+initial #100 rst_div_show<=0;
+
+div_frequence_show div_f(clk,div_clk,rst_div_show);
+always@(posedge div_clk)
+    begin
+        if(copy==4'b0000)
+            copy<=4'b1000;
+        else
+            copy=copy>>1;//用移位操作让灯更亮
+   end
+always @(posedge div_clk)
+    begin 
+        if(swit==1)
+            begin
+                blue<=1;
+                led_pin<=8'b00000000;
+                if(copy==4'b1000)
+                    begin
+                        tip_lamp_choose=4'b1000;
+                        tip_lamp<=8'b01101101;//S
+                    end
+                else if(copy==4'b0100)
+                    begin
+                        tip_lamp_choose=4'b0100;
+                        tip_lamp<=8'b01101101;//S
+                    end
+                else if(copy==4'b0010)
+                    begin
+                        tip_lamp_choose=4'b0010;
+                        tip_lamp<=8'b01110111;//A
+                    end    
+                else if(copy==4'b0001)
+                    begin
+                        tip_lamp_choose=4'b0001;
+                        tip_lamp<=8'b01110011;//P
+                    end
+                else
+                    begin
+                        tip_lamp=8'b00000000;
+                    end
+             end
+        else if(swit==0)
+            begin
+                led_pin<=8'b11111111;
+                blue<=0;
+               if(copy==4'b1000)
+                   begin
+                   tip_lamp_choose=4'b0001;
+                   tip_lamp<=8'b00111000;//L
+                   end
+               else if(copy==4'b0100)
+                   begin
+                       tip_lamp_choose=4'b0010;
+                       tip_lamp<=8'b00111111;//O
+                   end
+               else if(copy==4'b0010)
+                   begin
+                       tip_lamp_choose=4'b0100;
+                       tip_lamp<=8'b00111001;//C
+                   end    
+               else if(copy==4'b0001)
+                   begin
+                       tip_lamp_choose=4'b1000;
+                       tip_lamp<=8'b01110110;//K,H
+                   end
+               else
+                   begin
+                       tip_lamp=8'b00000000;
+                   end
+            end
+        else if(swit==2)
+            begin
+                led_pin<=8'b11111111;
+                blue<=0;
+                if(copy==4'b1000)
+                    begin
+                        tip_lamp_choose=4'b0001;
+                        tip_lamp<=8'b01110001;//F
+                    end
+                else if(copy==4'b0100)
+                    begin
+                        tip_lamp_choose=4'b0010;
+                        tip_lamp<=8'b01110111;//A
+                    end
+                else if(copy==4'b0010)
+                    begin
+                        tip_lamp_choose=4'b0100;
+                        tip_lamp<=8'b00110000;//I 
+                    end    
+                else if(copy==4'b0001)
+                    begin
+                        tip_lamp_choose=4'b1000;
+                        tip_lamp<=8'b00111000;//L
+                    end
+                else
+                    begin
+                        tip_lamp=8'b00000000;
+                    end
+            end    
+    end
+endmodule
+
+module div_frequence(clk,d_clk,rst);
+//div frequence
+input clk;
+input rst;
+output d_clk;
+
+reg [30:0]cnt;
+reg d_clk;
+always @(posedge clk)
+    if(rst)
+        begin 
+            d_clk<=0;
+            cnt<=0;
+        end
+    else 
+        begin 
+            if(cnt==100000000)
+                begin
+                    d_clk<=~d_clk;
+                    cnt<=0;
+                end
+            else
+                cnt<=cnt+1;
+        end
+endmodule
+
+module THREE_2_NINE(x3,x2,x1,y);
+input x3,x2,x1;
+output [6:0]y;
+reg [6:0]y;
+always @(x3,x2,x1)
+    begin
+        case({x3,x2,x1})
+        3'b101: y<=7'b1011011;
+        3'b100: y<=7'b0110011;
+        3'b011: y<=7'b1111001;
+        3'b010: y<=7'b1101101;
+        3'b001: y<=7'b0110000;
+        3'b000: y<=7'b1111110;
+        default: y<=7'b0000001;
+        endcase
+    end
+
+//assign y0=x2 || ~x3 && ~x1 || x3 && x1;
+//assign y1=~x3 || x1 && x2 || ~x1 && ~x2;
+//assign y2=x3 || ~x2 || x1;
+//assign y3=x2 || ~x1&&~x3 || x1 && x3;
+//assign y4=~x3 && ~x1 || x3 && x2;
+//assign y5=x3 || ~x1 && ~x2;
+//assign y6=x3 || x2;
+endmodule
+
+module COUNTDOWN(clk,rst,s_in,countdown_lamp,countdown_lamp_choose,signal);
+input clk;
+input rst;
+input [2:0] s_in;
+
+output [6:0]countdown_lamp;
+output [3:0]countdown_lamp_choose;
+output signal;
+
+wire d_clk; 
+wire [3:0]countdown_lamp_choose;
+assign countdown_lamp_choose=4'b1111;
+
+reg rst_div;
+reg [2:0]state;
+reg signal;
+reg stop;
+
+initial rst_div<=1;
+initial #100 rst_div<=0;
+initial stop<=0;
+
+always @(posedge clk)
+    if(s_in==1||s_in==2)
+        stop<=1;
+    else
+        stop<=0;
+
+
+div_frequence div_fre(clk,d_clk,rst_div);
+THREE_2_NINE T_2(state[2],state[1],state[0],countdown_lamp);
+always@(posedge d_clk)
+    if(rst)
+        begin
+            signal<=0;
+            state<=3'b101;
+        end
+    else
+        begin
+            if(state==3'b101)
+                begin
+                    if (stop)
+                        state<=3'b111;
+                    else
+                        state<=3'b100;
+                end
+            else if(state==3'b100)
+                begin
+                    if (stop)
+                        state<=3'b111;
+                    else
+                        state<=3'b011;
+                end
+            else if(state==3'b011)
+                begin
+                    if (stop)
+                        state<=3'b111;
+                    else
+                        state<=3'b010;
+                end
+            else if(state==3'b010)
+                begin
+                    if (stop)
+                        state<=3'b111;
+                    else
+                        state<=3'b001;
+                end
+            else if(state==3'b001)
+                begin
+                    if (stop)
+                        state<=3'b111;
+                    else 
+                        begin
+                            state<=3'b000;
+                            signal<=1;
+                        end
+                end
+        end    
+endmodule
+
+
+module down_trytime(clk,rst,con,state,past_signal);
+input clk;
+input rst;
+input con;
+output past_signal;
+
+output [2:0]state;
+
+reg past_signal;
+reg rst_div_show;
+reg [2:0]state;
+reg pascon;
+wire div_clk;
+initial rst_div_show<=1;
+initial #100 rst_div_show<=0;
+
+div_frequence_show(clk,div_clk,rst_div_show);
+
+always @(posedge div_clk)
+    if(rst)
+        begin
+            past_signal<=0;
+            pascon<=con;
+            state<=3'b111;
+        end
+    else if(pascon!=con)
+        begin
+            pascon<=con;
+            if (con)
+                begin
+                    if(state==3'b111)
+                        state<=3'b011;
+                    else if(state==3'b011)
+                        state<=3'b001;
+                    else 
+                        begin
+                        past_signal<=1;
+                        state<=3'b000;
+                        end
+                end
+            end    
+endmodule
+
+module Lock(try_time,confirm_newpassword,new_password,rst,confirm,countdown_lamp,countdown_lamp_choose,password_input,clk,tip_lamp_choose,tip_lamp,blue,led_pin);
+output blue;
+output [7:0] led_pin;
+
+input clk;//clock
+input rst;//reset
+input confirm;//confirm your input password
+input confirm_newpassword;//confirm your new setted password
+input [3:0]password_input;//input password
+input [3:0]new_password;//your new password
+
+output [6:0]countdown_lamp;//countdown lamp
+output [3:0]countdown_lamp_choose;//countdown lamp select
+output [2:0]try_time;//your try time
+output [3:0] tip_lamp_choose;//PASS FAIL LOCK lamp choose
+output [7:0] tip_lamp;//PASS FAIL LOCK lamp
+
+wire signal;
+reg rst_countdown;//reset of countdown module
+reg[2:0] state;//0:LOCK 1:PASS 2:FAIL
+reg [3:0]password;//set password
+reg flag;
+wire is_over;
+
+COUNTDOWN countdown_module(clk,rst_countdown,state,countdown_lamp,countdown_lamp_choose,signal);//countdown
+
+initial 
+    begin
+        state<=0;
+        flag<=1;
+        password=4'b1001;
+    end
+    
+SHOW show_module(state,clk,tip_lamp_choose,tip_lamp,blue,led_pin);//show module
+
+down_trytime COUNT_UNIT(clk,flag,confirm,try_time,is_over);
+
+always@(posedge clk)
+    begin
+        if (rst)
+            begin
+                state<=0;
+                rst_countdown<=1;
+	            flag<=1;
+            end
+        else if(!is_over&&!signal && (password_input[0] || password_input[1] || password_input[2] || password_input[3]))
+            begin
+                flag<=0;
+                rst_countdown<=0;
+            end
+        else if(state!=1&&signal)
+            state<=2;
+        
+        if(state!=1&&is_over==1)
+            state<=2;
+        
+        if(!rst_countdown && password_input==password && confirm)
+            state<=1;
+        if (state==1 && confirm_newpassword)
+            password<=new_password;
+    end
+
+endmodule
