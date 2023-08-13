@@ -1,0 +1,215 @@
+#include <iostream>
+#include <math.h>
+#include <algorithm>
+#include <vector>
+#include <queue>
+#include <stack>
+#include <string>
+#include <fstream>
+
+using namespace std;
+
+typedef struct TreeNode
+{
+    int val;
+    struct TreeNode * left;
+    struct TreeNode * right;
+}TreeNode;
+
+TreeNode * CreateTree(vector<int> input);
+void preorder(TreeNode * root);
+void inorder(TreeNode * root);
+void postorder(TreeNode * root);
+void levelorder(TreeNode * root);
+void serialization(TreeNode * root,vector<int> * v);
+TreeNode * deserialization(vector<int> v);
+
+int main()
+{
+    ofstream outfile;
+    cout<<"Input the number of integers:";
+    int num;
+    cin>>num;
+    if (num==0) exit(0);
+    cout<<"Input the integers:";
+    vector<int> input;
+    input.resize(num);
+    for (int i=0;i<num;i++) cin>>input.at(i);
+    TreeNode * root = new TreeNode;
+    root->left=NULL;
+    root->right=NULL;
+    root=CreateTree(input);
+
+    cout<<"preorder:    ";
+    preorder(root);
+    cout<<endl;
+
+    cout<<"inorder:     ";
+    inorder(root);
+    cout<<endl;
+
+    cout<<"postorder:   ";
+    postorder(root);
+    cout<<endl;
+
+    cout<<"levelorder:  ";
+    levelorder(root);
+    cout<<endl;
+    cout<<endl;
+
+    cout<<"serialization:   ";
+    vector<int> v;
+    serialization(root,&v);
+    outfile.open("C://Users//yaoshunyu//Desktop//write.txt");
+    for (int i=0;i<(int)v.size();i++)
+    {
+        cout<<v.at(i)<<' ';
+        outfile<<v.at(i)<<' ';
+    }
+    outfile<<endl;
+    outfile.close();
+    cout<<endl;
+    cout<<endl;
+
+    cout<<"deserialization"<<endl;
+    ifstream infile;
+    infile.open("C://Users//yaoshunyu//Desktop//read.txt");
+    if (!infile)
+    {
+        cout<<"error!";
+        exit(0);
+    }
+    int t;
+    vector<int> de;
+    while (infile>>t)
+    {
+        de.push_back(t);
+    }
+    infile.close();
+    TreeNode * root1=new TreeNode;
+    root1->left=NULL;
+    root1->right=NULL;
+    root1=deserialization(de);
+
+    cout<<"preorder:    ";
+    preorder(root1);
+    cout<<endl;
+
+    cout<<"inorder:     ";
+    inorder(root1);
+    cout<<endl;
+
+    cout<<"postorder:   ";
+    postorder(root1);
+    cout<<endl;
+
+    cout<<"levelorder:  ";
+    levelorder(root1);
+    cout<<endl;
+}
+
+TreeNode * CreateTree(vector<int> input)
+{
+    TreeNode * root=new TreeNode;
+    root->left=NULL;
+    root->right=NULL;
+    root->val=input.at(0);
+    TreeNode * p;
+
+    for (int i=1;i<(int)input.size();i++)
+    {   p=root;
+        int value=input.at(i);
+        TreeNode * node=new TreeNode;
+        node->val=value;
+        node->left=NULL;
+        node->right=NULL;
+        while(((value<p->val && p->left==NULL) || (value>p->val && p->right==NULL))==false)
+        {
+            if (value<p->val) p=p->left;
+            else p=p->right;
+        }
+        if (value<p->val) p->left=node;
+        if (value>p->val) p->right=node;
+    }
+    return root;
+}
+
+void preorder(TreeNode * root)
+{
+    if (root==NULL) return;
+    cout<<root->val;
+    preorder(root->left);
+    preorder(root->right);
+}
+
+void inorder(TreeNode * root)
+{
+    if (root==NULL) return;
+    inorder(root->left);
+    cout<<root->val;
+    inorder(root->right);
+}
+
+void postorder(TreeNode * root)
+{
+    if (root==NULL) return;
+    postorder(root->left);
+    postorder(root->right);
+    cout<<root->val;
+}
+
+void levelorder(TreeNode * root)
+{
+    if (root==NULL) return;
+    queue<TreeNode *> q;
+    q.push(root);
+    while (q.empty()==false)
+    {
+        if (q.front()->left!=NULL) q.push(q.front()->left);
+        if (q.front()->right!=NULL) q.push(q.front()->right);
+        cout<<q.front()->val;
+        q.pop();
+    }
+    return;
+}
+
+void serialization(TreeNode * root,vector<int> * v)
+{
+    if (root==NULL) return;
+    stack<TreeNode *> s;
+    TreeNode * p=root;
+    while (p!=NULL || s.empty()==false)
+    {
+        while (p!=NULL)
+        {
+            s.push(p);
+            (*v).push_back(p->val);
+            p=p->left;
+        }
+        if (s.empty()==false)
+        {
+            p=s.top();
+            s.pop();
+            p=p->right;
+        }
+    }
+}
+
+TreeNode * deserialization(vector<int> v)
+{
+    if (v.size()==0) return NULL;
+    TreeNode * root=new TreeNode;
+    root->val=v.at(0);
+    root->left=NULL;
+    root->right=NULL;
+    vector<int> vleft;
+    vector<int> vright;
+    for (int i=1;i<(int)v.size();i++)
+    {
+        if ((int)v.at(i)<root->val) vleft.push_back((int)v.at(i));
+        else vright.push_back((int)v.at(i));
+    }
+    root->left=deserialization(vleft);
+    root->right=deserialization(vright);
+    return root;
+}
