@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<options>
+    <adapter name="{C94895B6-2E1E-4625-B0E6-711FB6FC7A4D}" mac="AB86DyVq" ip="0.0.0.0" />
+    <activesvr host="127.0.0.1" port="10005" />
+</options>

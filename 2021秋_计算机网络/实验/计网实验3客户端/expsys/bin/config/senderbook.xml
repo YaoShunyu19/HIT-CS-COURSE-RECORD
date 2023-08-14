@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<addresses>
+    <address ip="192.168.1.26" mac="00-01-6C-AD-69-C3" host="" />
+    <address ip="192.168.1.1" mac="00-0F-E2-0F-9F-85" host="" />
+    <address ip="192.168.1.28" mac="00-19-DB-A9-F5-B7" host="" />
+    <address ip="192.168.1.2" mac="00-19-21-A1-D8-F9" host="" />
+    <address ip="192.168.1.55" mac="00-11-22-33-44-55" host="" />
+    <address ip="192.168.1.56" mac="00-0E-A6-8E-5D-49" host="" />
+    <address ip="192.168.1.32" mac="00-01-6C-A4-B5-FE" host="" />
+    <address ip="192.168.1.58" mac="00-1B-38-99-2B-76" host="" />
+    <address ip="192.168.1.33" mac="00-1A-4D-09-DF-64" host="" />
+    <address ip="192.168.1.59" mac="00-13-20-8A-C0-06" host="" />
+    <address ip="192.168.1.34" mac="00-1D-92-73-B4-83" host="" />
+    <address ip="192.168.1.35" mac="00-13-20-81-49-8B" host="" />
+    <address ip="192.168.1.38" mac="00-09-6B-93-FD-5D" host="" />
+    <address ip="192.168.1.39" mac="00-14-78-9E-D5-D7" host="" />
+    <address ip="192.168.1.40" mac="00-0D-60-3B-F4-51" host="" />
+    <address ip="192.168.1.41" mac="00-0D-60-39-9A-26" host="" />
+    <address ip="192.168.1.43" mac="00-1D-92-73-B4-8C" host="" />
+    <address ip="192.168.1.44" mac="00-16-D3-0C-13-E5" host="" />
+    <address ip="192.168.1.46" mac="00-1A-4D-6B-30-14" host="" />
+    <address ip="192.168.1.47" mac="00-1D-92-3F-EE-E7" host="" />
+    <address ip="192.168.1.48" mac="00-1D-92-27-40-54" host="" />
+    <address ip="192.168.1.49" mac="00-13-A9-FC-BB-DB" host="" />
+    <address ip="192.168.1.50" mac="00-0D-60-12-1E-74" host="" />
+    <address ip="192.168.1.51" mac="00-1D-92-27-40-06" host="" />
+    <address ip="192.168.1.15" mac="00-F0-4C-86-F7-49" host="" />
+    <address ip="192.168.1.16" mac="00-13-D4-2B-27-1E" host="" />
+    <address ip="192.168.1.17" mac="00-15-F2-61-AD-16" host="" />
+    <address ip="192.168.1.18" mac="00-16-D3-3E-E1-A9" host="" />
+    <address ip="192.168.1.19" mac="00-0A-E4-3D-64-27" host="" />
+    <address ip="192.168.1.20" mac="00-16-D3-5E-D1-DB" host="" />
+    <address ip="192.168.1.21" mac="00-01-6C-AD-6C-2B" host="" />
+    <address ip="192.168.1.22" mac="00-13-D4-3C-EA-56" host="" />
+    <address ip="192.168.1.23" mac="00-13-20-8A-BD-2B" host="" />
+    <address ip="192.168.1.25" mac="00-1D-92-73-B4-87" host="" />
+    <address ip="192.168.1.73" mac="00-0C-29-00-86-5E" host="" />
+    <address ip="192.168.1.100" mac="00-13-20-65-CD-F4" host="" />
+</addresses>

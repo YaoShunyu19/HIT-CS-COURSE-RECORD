@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1128</width>
+    <height>927</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="0">
+     <widget class="QPushButton" name="pushButton_10">
+      <property name="text">
+       <string>查询某一领域的教师</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2" colspan="3">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string>学生姓名</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2" colspan="3">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>领域名称</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="5" colspan="2">
+     <widget class="QLineEdit" name="lineEdit_7"/>
+    </item>
+    <item row="1" column="6">
+     <widget class="QLineEdit" name="lineEdit_9"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="text">
+       <string>查询学生的指导教师</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>查询教师指导的学生</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1" colspan="3">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>教师工号</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="text">
+       <string>查询教师详细信息</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="4" colspan="3">
+     <widget class="QLineEdit" name="lineEdit"/>
+    </item>
+    <item row="6" column="2" colspan="3">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>教师姓名</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="text">
+       <string>查询教师的论文</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1" colspan="3">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>教师姓名</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="text">
+       <string>查询论文的作者</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="5" colspan="2">
+     <widget class="QLineEdit" name="lineEdit_2"/>
+    </item>
+    <item row="1" column="0" colspan="3">
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="text">
+       <string>查询拥有某个头衔的教师</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="3">
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="text">
+       <string>查询每个实验室的教师人数</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3" colspan="3">
+     <widget class="QLabel" name="label_9">
+      <property name="text">
+       <string>头衔名称</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="4" colspan="3">
+     <widget class="QLineEdit" name="lineEdit_3"/>
+    </item>
+    <item row="8" column="1" colspan="3">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>论文名称</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QPushButton" name="pushButton_11">
+      <property name="text">
+       <string>查询每个实验室的教师</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="4" colspan="3">
+     <widget class="QLineEdit" name="lineEdit_4"/>
+    </item>
+    <item row="2" column="5" colspan="2">
+     <widget class="QLineEdit" name="lineEdit_8"/>
+    </item>
+    <item row="10" column="5" colspan="2">
+     <widget class="QLineEdit" name="lineEdit_6"/>
+    </item>
+    <item row="11" column="0">
+     <widget class="QPushButton" name="pushButton_12">
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="5" colspan="2">
+     <widget class="QLineEdit" name="lineEdit_5"/>
+    </item>
+    <item row="9" column="2" colspan="2">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>教师姓名</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>查询教师教授的课程</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="text">
+       <string>查询教师研究的领域</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="2" colspan="2">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>教师姓名</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1128</width>
+     <height>37</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>查询</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<addresses>
+    <address ip="fe80:0000:0000:0000:021d:0fff:fe0f:cca0" mac="00-1D-0F-0F-CC-A0" host="" />
+    <address ip="fe80:0000:0000:0000:020e:a6ff:fe3c:ea2f" mac="00-0E-A6-3C-EA-2F" host="" />
+    <address ip="fe80:0000:0000:0000:0201:6cff:fead:6c30" mac="00-01-6C-AD-6C-30" host="" />
+    <address ip="fe80:0000:0000:0000:021d:92ff:fe73:b48c" mac="00-1D-92-73-B4-8C" host="" />
+    <address ip="fe80:0000:0000:0000:020c:29ff:fec7:3867" mac="00-0C-29-C7-38-67" host="" />
+    <address ip="fe80:0000:0000:0000:020c:29ff:fec7:385d" mac="00-0C-29-C7-38-5D" host="" />
+    <address ip="fe80:0000:0000:0000:020c:29ff:fed0:eccd" mac="00-0C-29-D0-EC-CD" host="" />
+    <address ip="fe80:0000:0000:0000:020c:29ff:fe25:a650" mac="00-0C-29-25-A6-50" host="" />
+    <address ip="fe80:0000:0000:0000:020c:29ff:fe25:a646" mac="00-0C-29-25-A6-46" host="" />
+</addresses>

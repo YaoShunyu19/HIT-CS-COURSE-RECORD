@@ -1,0 +1,18 @@
+#include "sysInclude.h"
+
+extern struct stud_arp_cache_node *g_arp_cache_table;
+
+int stud_arp_recv(char * pBuffer,unsigned short length)
+{
+  return 0;
+}
+
+void stud_arp_cache_timeout(UINT32 destIPAdd, unsigned char msgType)
+{
+
+}
+
+int stud_rarp_recv_rep(char * pBuffer,unsigned short length)
+{
+  return 0;
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="gb2312"?><templates><template name="ARP" 
+guid="F2E7F52F-6911-4ff5-9599-83B7FC9291D2" descript="ARP协议模版" type="2" 
+ipversion="4"/><template name="RARP" guid="A361DBD3-BF8F-48f7-84DD-05B240F101E4" 
+descript="RARP协议模版" type="3" ipversion="4"/><template name="IP" 
+guid="6BA4FD79-9DA3-44f4-806D-EA19BF57ECF8" descript="IP协议模版" type="1" 
+ipversion="4"/><template name="TCP" guid="02AF080E-3272-4d04-BE83-FAB62860F40A" 
+descript="TCP协议模版" type="4" ipversion="0"/><template name="UDP" 
+guid="FB8FC56E-0973-428d-9DBA-F08A8A0016AF" descript="UDP协议模版" type="5" 
+ipversion="0"/><template name="ICMP" guid="F405820C-B357-4fa7-80D3-C1568A43E2F9" 
+descript="ICMP协议模版" type="6" ipversion="4"/><template name="IGMPv1" 
+guid="1DB92909-7434-4f30-A359-EE2A5EE8394B" descript="IGMPv1协议模版" type="7" 
+ipversion="4"/><template name="DNS" guid="7A7B23FB-ADAE-482e-A8C5-AB5F2A528BA8" 
+descript="DNS协议模版" type="8" ipversion="4"/><template name="LLC" 
+guid="6D26D269-6AA5-44b8-B4CB-98B1D7F9936B" descript="LLC协议模版" type="31" 
+ipversion="4"/><template name="SNMP" guid="1E02E3B7-2BAD-4d3d-94CF-900AD2304AA3" 
+descript="SNMP协议模版" type="12" ipversion="0"/><template name="SMTP" 
+guid="6CA4E2A9-C1DE-4424-9AB3-BC65CCB1F33D" descript="SMTP协议模版" type="16" 
+ipversion="0"/><template name="TELNET" descript="TELNET协议模板" guid="AA9BB18E-C9F5-47e0-9479-195E7C4613AE" type="13" ipversion="0"/><template name="POP3" 
+guid="3F8BA338-26C3-48af-A078-D5C2CD729589" descript="POP3协议模版" type="15" 
+ipversion="0"/><template name="IMAP" guid="EF173AA2-F6A3-4f58-9977-2F9B096BA1DB" 
+descript="IMAP协议模版" type="17" ipversion="0"/><template name="NETBIOS_NAME" 
+guid="E46E6D02-4B9D-44ba-9FEF-DB365C718E49" descript="WINS" 
+type="14" ipversion="0"/><template name="NETBIOS_SESSION" guid="5EFFDF54-CB8B-44cd-8E38-986E25424F08" descript="NETBIOS会话协议模版" type="21" 
+ipversion="0"/><template name="NETBIOS_DATA" guid="8FA8EFC7-26AA-42f8-BBF9-8E1253EF9BF9" descript="NETBIOS数据协议模版" type="22" ipversion="0"/><template 
+name="DHCP" guid="4CEA9295-3571-47b4-960E-348BED999E3B" descript="DHCP协议模版" 
+type="9" ipversion="4"/><template name="FTP" guid="195DEE8D-7858-4c9e-850B-FBFD1377B148" descript="FTP协议模版" type="11" ipversion="0"/><template 
+name="HTTP" guid="069F26E6-50D2-4aa9-A01C-C75EA96736A1" descript="HTTP协议模版" 
+type="10" ipversion="0"/><template name="IPv6" guid="AF997BD6-CD58-4dbf-9035-61C6B468DCAA" descript="IPv6协议模版" type="30" ipversion="6"/><template 
+name="ICMPv6" guid="BAAA1FC2-489D-41c5-8541-39B0BB91BF8B" 
+descript="ICMPv6协议模版" type="32" ipversion="6"/><template name="RIP" 
+guid="064D1AF3-5B48-40a4-80E5-FAF5FEF29F5E" descript="RIPV2协议模版" type="18" 
+ipversion="4"/><template name="RIPV1" guid="064D1AF3-5B48-40a4-80E5-FAF5FEF29F5F" descript="RIPV1协议模版" type="45" ipversion="4"/><template 
+name="SELFDEF" guid="12532290-4EF3-455e-9F05-FF55E91B3FE1" 
+descript="自定义协议模版" type="37" ipversion="0"/><template name="OSPF" 
+guid="1B7D39CE-F6C4-4c20-AF9D-CC31170C711F" descript="OSPF协议模版" type="19" 
+ipversion="4"/><template name="OSPF_HELLO" 
+guid="1B7D39CE-F6C4-4c20-AF9D-CC31170C7120" descript="OSPFHELLO协议模版" type="46" 
+ipversion="4"/><template name="OSPF_LSR" 
+guid="1B7D39CE-F6C4-4c20-AF9D-CC31170C7121" descript="OSPFLSR协议模版" type="47" 
+ipversion="4"/><template name="OSPF_ACK" 
+guid="1B7D39CE-F6C4-4c20-AF9D-CC31170C7122" descript="OSPFACK协议模版" type="48" 
+ipversion="4"/><template name="OSPF_DBD" 
+guid="1B7D39CE-F6C4-4c20-AF9D-CC31170C7123" descript="OSPFDBD协议模版" type="49" 
+ipversion="4"/><template name="OSPF_LSU" 
+guid="1B7D39CE-F6C4-4c20-AF9D-CC31170C7124" descript="OSPFLSU协议模版" type="50" 
+ipversion="4"/><template name="BOOTP" guid="763786A6-38BF-4948-BCEE-223C912FC68E" descript="BOOTP协议模版" type="20" ipversion="4"/><template 
+name="ICMPMASK" guid="F405820C-B357-4fa7-80D3-C1568A43E2FA" 
+descript="ICMP子网掩码协议模版" type="39" ipversion="4"/><template 
+name="ICMPTIME" guid="F405820C-B357-4fa7-80D3-C1568A43E2FB" 
+descript="ICMP时间戳协议模版" type="40" ipversion="4"/><template 
+name="ICMPUNACCESS" guid="F405820C-B357-4fa7-80D3-C1568A43E2FC" 
+descript="ICMP不可达协议模版" type="41" ipversion="4"/><template 
+name="ICMPTIMEOUT" guid="F405820C-B357-4fa7-80D3-C1568A43E2FD" 
+descript="ICMP超时协议模版" type="42" ipversion="4"/><template name="ICMPEOUTE" 
+guid="F405820C-B357-4fa7-80D3-C1568A43E2FE" descript="ICMP改变路由协议模版" 
+type="43" ipversion="4"/><template name="ICMPREPLY" guid="F405820C-B357-4fa7-80D3-C1568A43E2FF" descript="ICMP回显协议模版" type="44" 
+ipversion="4"/><template name="LCP" guid="FBDBBF76-74C9-41DE-A918-EA42E848F215" descript="LCP协议模版" type="53" ipversion="4" /><template name="PAP" guid="4549A0AA-B494-4A27-8146-6E7A600F0189" descript="PAP协议模版" type="55" ipversion="4" /><template name="CHAP" guid="BDB960AD-C742-45C4-999F-48360D66BFCE" descript="CHAP协议模版" type="56" ipversion="4" /><template name="IPCP" guid="62092E00-842F-4860-961C-FFF36985FAC9" descript="IPCP协议模版" type="54" ipversion="4" /><template name="VRRP" guid="77C4BD79-EC70-4871-BB6A-66B1A0BDA261" descript="VRRP协议模版" type="27" ipversion="4" /><template name="802.1D" guid="BBA97716-285D-4374-B46A-42395A97DF04" descript="802.1D协议模版" type="57" ipversion="4" />
+<template name="Packet Too Big" guid="BAAA1FC2-489D-41c5-8541-39B0BB91BF12" descript="ICMP6包过大协议模版" type="59" ipversion="6" />
+<template name="Time Exceeded" guid="BAAA1FC2-489D-41c5-8541-39B0BB91BF13" descript="ICMP6超时协议模版" type="60" ipversion="6" />
+<template name="Parameter Problem" guid="BAAA1FC2-489D-41c5-8541-39B0BB91BF14" descript="ICMP6参数问题协议模版" type="61" ipversion="6" />
+<template name="Echo Request" guid="BAAA1FC2-489D-41c5-8541-39B0BB91BF15" descript="ICMP6回显请求协议模版" type="62" ipversion="6" />
+<template name="Echo Reply" guid="BAAA1FC2-489D-41c5-8541-39B0BB91BF16" descript="ICMP6回显回应协议模版" type="63" ipversion="6" />
+<template name="Destination Unreachable" guid="BAAA1FC2-489D-41c5-8541-39B0BB91BF11" descript="ICMP6不可达协议模版" type="64" ipversion="6" />
+<template name="IPV6 RIP" guid="064D1AF3-5B48-40a4-80E5-FAF5FEF29F5A" descript="IPV6 RIP协议模版" type="65" ipversion="6" />
+<template name="OSPFv3 HELLO" guid="0B13CF83-30B7-4359-9BC4-BD313EFDB8E1" descript="OSPFv3 HELLO协议模版" type="66" ipversion="6" />
+<template name="OSPFv3 DBD" guid="0B13CF83-30B7-4359-9BC4-BD313EFDB8E2" descript="OSPFv3 DBD协议模版" type="69" ipversion="6" />
+<template name="OSPFv3 LSR" guid="0B13CF83-30B7-4359-9BC4-BD313EFDB8E3" descript="OSPFv3 LSR协议模版" type="67" ipversion="6" />
+<template name="OSPFv3 ACK" guid="0B13CF83-30B7-4359-9BC4-BD313EFDB8E4" descript="OSPFv3 ACK协议模版" type="68" ipversion="6" />
+<template name="OSPFv3 LSU" guid="0B13CF83-30B7-4359-9BC4-BD313EFDB8E5" descript="OSPFv3 LSU协议模版" type="70" ipversion="6" />
+<template name="IP6TO4" guid="EDBF43F2-71CE-45D1-9A97-C7DE9853ECB8" descript="IP6TO4 协议模版" type="71" ipversion="4" />
+
+<template name="RADIUS" guid="04D47B52-5D8D-4e52-A4A0-0769D95D75BA" descript="RADIUS 协议模版" type="25" ipversion="4" />
+<template name="802.1X" guid="65A02DAA-AC10-4192-B8D7-4634CADA3717" descript="802.1X 协议模版" type="72" ipversion="4" />
+<template name="PIM" guid="CD8E1636-F923-4004-82F0-319BC7C04061" descript="PIM 协议模版" type="73" ipversion="4" />
+<template name="L2TP" guid="FC8C5EA6-AC47-4440-BE12-208895F98702" descript="L2TP 协议模版" type="74" ipversion="4" />
+<template name="PPTP" guid="BF12DC34-B36A-4bd7-8B54-2AFE24E109FF" descript="PPTP 协议模版" type="75" ipversion="4" />
+
+<template name="ICMP6路由器请求模版" guid="BAAA1FC2-489D-41c5-8541-39B0BB91BF17" descript="ICMP6路由器请求模版" type="76" ipversion="6" />
+<template name="ICMP6路由器通告模版" guid="BAAA1FC2-489D-41c5-8541-39B0BB91BF18" descript="ICMP6路由器通告模版" type="77" ipversion="6" />
+<template name="ICMP6邻居请求模版" guid="BAAA1FC2-489D-41c5-8541-39B0BB91BF19" descript="ICMP6邻居请求模版" type="78" ipversion="6" />
+<template name="ICMP6邻居通告模版" guid="BAAA1FC2-489D-41c5-8541-39B0BB91BF20" descript="ICMP6邻居通告模版" type="79" ipversion="6" />
+</templates>

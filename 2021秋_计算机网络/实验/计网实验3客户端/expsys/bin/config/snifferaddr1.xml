@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<addresses>
+    <address ip="192.168.2.1" mac="00-17-3F-BA-26-E4" host="" />
+    <address ip="192.168.2.4" mac="00-02-3F-E9-8F-B2" host="" />
+    <address ip="192.168.2.6" mac="00-16-41-11-45-23" host="" />
+    <address ip="192.168.2.7" mac="00-0F-B0-60-9A-2B" host="" />
+    <address ip="192.168.2.8" mac="00-16-D3-C8-78-0F" host="" />
+    <address ip="192.168.2.17" mac="00-0D-60-CF-8E-8B" host="" />
+    <address ip="192.168.2.118" mac="00-00-00-00-08-EE" host="" />
+</addresses>

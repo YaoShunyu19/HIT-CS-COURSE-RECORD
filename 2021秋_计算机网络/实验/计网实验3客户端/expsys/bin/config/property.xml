@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="gb2312"?><propterties>
+
+<property type="0" 
+name="Ethernet II封装" enable="0" icon="0"><item type="2" name="目的物理地址" 
+default="FF-FF-FF-FF-FF-FF" id="4096" info="[0|6]" format="十六进制" 
+icon="2"><argv value="152"/></item><item type="2" name="源物理地址" default="00-
+00-00-00-00-00" id="4097" info="[6|6]" format="十六进制" icon="2"><argv 
+value="152"/></item><item type="0" name="类型" default="0800" id="4098" 
+info="[12|2]" icon="1" format="十六进制"><argv value="0800" name="IP数据"/><argv 
+value="0806" name="ARP数据"/><argv value="0835" 
+name="RARP数据"/></item></property><property type="38" name="IEEE 802.3封装" 
+enable="0" icon="0"><item type="2" name="目的物理地址" default="FF-FF-FF-FF-FF-
+FF" id="32030" info="[0|6]" format="十六进制" icon="2"><argv 
+value="152"/></item><item type="2" name="源物理地址" default="00-00-00-00-00-00" 
+id="32031" info="[6|6]" format="十六进制" icon="2"><argv 
+value="152"/></item><item type="0" name="长度" default="" id="32032" 
+info="[12|2]" icon="1" format=""/></property><property type="23" name="VLAN封装" 
+enable="0" icon="0"><item type="0" name="用户优先权" default="0" id="32011" 
+info="[0|1]" icon="1"/><item type="0" name="规范标识符" default="0" id="32012" 
+info="[0|1]" format="" icon="1"/><item type="0" name="VLAN编号" default="0" 
+id="32013" info="[0|2]" icon="1"/><item type="0" name="协议类型" default="0800" 
+id="32014" info="[2|2]" icon="1" format="十六进制"/></property><property 
+type="1" name="IP封装" enable="0" icon="0"><item type="0" name="版本信息" 
+default="4" id="8192" info="[0|1]" icon="1"/><item type="0" 
+name="IP头长度(32bit数)" default="5" id="8193" info="[0|1]" icon="1"/><item 
+type="0" name="服务类型" default="0" id="8194" info="[1|1]" format="十六进制" 
+icon="1"/><item type="0" name="总长度" default="40" id="8195" info="[2|2]" 
+icon="1"/><item type="0" name="标识" default="0000" id="8201" info="[4|2]" 
+format="十六进制" icon="3"/><item type="0" name="标志" default="000" id="8196" 
+info="[6|1]" format="" icon="1"/><item type="0" name="分段偏移量" default="000" 
+id="8203" info="[6|2]" format="" icon="1"/><item type="0" name="生存时间" 
+default="128" id="8202" info="[8|1]" icon="1"/><item type="0" name="协议类型" 
+default="6" id="8197" info="[9|1]" icon="1"/><item type="0" name="校验和" 
+default="FFFF" id="8198" info="[10|2]" format="十六进制" icon="2"/><item 
+type="2" name="发送IP地址" default="127.0.0.1" id="8199" info="[12|4]" 
+icon="7"><argv value="181"/></item><item type="2" name="目标IP地址" 
+default="192.168.0.1" id="8200" info="[16|4]" icon="7"><argv 
+value="181"/></item></property><property type="30" name="IPv6封装" enable="0" 
+icon="0"><item type="0" name="版本" default="6" id="31100" info="[0|4]" 
+icon="1"/><item type="0" name="优先级" default="0" id="31101" info="[0|4]" 
+icon="1"/><item type="0" name="流标签" default="0" id="31102" info="[0|4]" 
+icon="1"/><item type="0" name="长度" default="61" id="31103" info="[4|2]" 
+icon="1"/><item type="0" name="下一首部" default="0" id="31104" info="[6|1]" 
+icon="1"/><item type="0" name="跳数限制" default="0" id="31105" info="[7|1]" 
+icon="1"/><item type="2" name="源地址" 
+default="0:0:0:0:0:0:0:0" id="31106" info="[8|16]" format="十六进制"
+icon="1"><argv value="181"/></item><item type="2" name="目标地址" 
+default="0:0:0:0:0:0:0:0" id="31107" info="[24|16]" format="十六进制"
+icon="1"><argv value="181"/></item></property><property type="2" name="ARP封装" enable="0" icon="0"><item 
+type="0" name="硬件类型" default="1" id="24581" info="[0|2]" format="" 
+icon="1"/><item type="0" name="协议类型" default="0800" id="24582" info="[2|2]" 
+format="十六进制" icon="1"/><item type="0" name="硬件地址长度" default="6" 
+id="24583" info="[4|1]" icon="1"/><item type="0" name="协议地址长度" default="4" 
+id="24584" info="[5|1]" icon="1"/><item type="0" name="操作码" default="1" 
+id="24576" info="[6|2]" icon="1"><argv value="1" name="ARP请求"/><argv value="2" 
+name="ARP应答"/></item><item type="2" name="发送物理地址" default="00-00-00-00-
+00-00" id="24577" info="[8|6]" format="十六进制" icon="2"><argv 
+value="152"/></item><item type="2" name="发送IP地址" default="127.0.0.1" 
+id="24578" info="[14|4]" icon="7"><argv value="181"/></item><item type="2" 
+name="目的物理地址" default="00-00-00-00-00-00" id="24579" info="[18|6]" 
+format="十六进制" icon="2"><argv value="152"/></item><item type="2" 
+name="目的IP地址" default="192.168.0.1" id="24580" info="[24|4]" icon="7"><argv 
+value="181"/></item></property><property type="3" name="RARP封装" enable="0" 
+icon="0"><item type="0" name="硬件类型" default="1" id="30005" info="[0|2]" 
+format="" icon="1"/><item type="0" name="协议类型" default="8035" id="30006" 
+info="[2|2]" format="十六进制" icon="1"/><item type="0" name="硬件地址长度" 
+default="6" id="30007" info="[4|1]" icon="1"/><item type="0" name="协议地址长度" 
+default="4" id="30008" info="[5|1]" icon="1"/><item type="0" name="操作码" 
+default="3" id="30000" info="[6|2]" icon="1"><argv value="3" 
+name="RARP请求"/><argv value="4" name="RARP应答"/></item><item type="2" 
+name="发送物理地址" default="00-00-00-00-00-00" id="30001" info="[8|6]" 
+format="十六进制" icon="2"><argv value="152"/></item><item type="2" 
+name="发送IP地址" default="127.0.0.1" id="30002" info="[14|4]" icon="7"><argv 
+value="181"/></item><item type="2" name="目的物理地址" default="FF-FF-FF-FF-FF-
+FF" id="30003" info="[18|6]" format="十六进制" icon="2"><argv 
+value="152"/></item><item type="2" name="目的IP地址" default="192.168.0.1" 
+id="30004" info="[24|4]" icon="7"><argv value="181"/></item></property><property 
+type="31" name="LLC封装" enable="0" icon="0"><item type="0" name="目标服务访问点" default="00" id="28683" info="[0|1]" format="十六进制" 
+icon="1"/><item type="0" name="源服务访问点" default="00" id="28684" 
+info="[1|1]" format="十六进制" icon="1"/><item type="0" name="控制" default="0" 
+id="28685" info="[2|1]" icon="1" format="十六进制"><icon>1</icon></item></property><property type="4" name="TCP封装" enable="0" 
+icon="0"><item type="0" name="源端口号" default="1026" id="16384" info="[0|2]" 
+format="" icon="1"/><item type="0" name="目的端口号" default="80" id="16385" 
+info="[2|2]" icon="1"><icon>1</icon></item><item type="0" name="序号" 
+default="0" id="16386" info="[4|4]" icon="4" 
+format="十六进制"><icon>4</icon></item><item type="0" name="确认序号" 
+default="0" id="16387" info="[8|4]" icon="4" 
+format="十六进制"><icon>4</icon></item><item type="0" 
+name="TCP首部长度(32bit数)" default="5" id="16390" info="[12|1]" 
+icon="1"><icon>1</icon></item><item type="2" name="标志位" default="0" 
+id="16388" info="[13|1]" format="十六进制" icon="3"><argv 
+value="185"/></item><item type="0" name="窗口大小" default="0" id="16391" 
+info="[14|2]" icon="1"><icon>1</icon></item><item type="0" name="校验和" 
+default="FFFF" id="16389" info="[16|2]" format="十六进制" icon="2"/><item 
+type="0" name="紧急指针" default="0" id="16392" info="[18|2]" 
+icon="1"><icon>1</icon></item></property><property type="5" name="UDP封装" 
+enable="0" icon="0"><item type="0" name="源端口号" default="1026" id="12288" 
+info="[0|2]" format="" icon="1"/><item type="0" name="目的端口号" default="137" 
+id="12289" info="[2|2]" icon="1"/><item type="0" name="UDP总长度" default="32" 
+id="12291" info="[4|2]" icon="1"/><item type="0" name="检验和" default="FFFF" 
+id="12290" info="[6|2]" format="十六进制" icon="2"/></property><property 
+type="6" name="ICMP封装" enable="0" icon="0"><item type="0" name="类型" 
+default="1" id="28672" info="[0|1]" format="" icon="1"/><item type="0" 
+name="代码" default="0" id="28673" info="[1|1]" 
+icon="1"><icon>1</icon></item><item type="0" name="校验和" default="FFFF" 
+id="28674" info="[2|2]" format="十六进制" icon="2"/><item type="2" 
+name="ICMP数据" default="0" info="[4|1476]" format="十六进制" icon="1" 
+id="28675"><argv value="201"/></item></property><property type="40" 
+name="ICMP子时间戳封装" enable="0" icon="0"><item type="0" name="类型" 
+default="13" id="10006" info="[0|1]" format="" icon="1"/><item type="0" 
+name="代码" default="0" id="10007" info="[1|1]" 
+icon="1"><icon>1</icon></item><item type="0" name="校验和" default="FFFF" 
+id="10008" info="[2|2]" format="十六进制" icon="2"/><item type="0" name="标识符" 
+default="000000" id="10009" info="[4|2]" format="" icon="1"/><item type="0" 
+name="序列号" default="000000" id="10010" info="[6|2]" format="" icon="1"/><item 
+type="0" name="发起时间戳" default="0000000000" id="10011" info="[8|4]" 
+format="" icon="1"/><item type="0" name="接收时间戳" default="0000000000" 
+id="10012" info="[12|4]" format="" icon="1"/><item type="0" name="传送时间戳" 
+default="0000000000" id="10013" info="[16|4]" format="" 
+icon="1"/></property><property type="7" name="IGMPv1封装" enable="0" 
+icon="0"><item type="0" name="版本" default="0" id="30800" info="[0|1]" icon="1" 
+format=""/><item type="0" name="类型" default="0" id="30801" info="[0|1]" 
+icon="1" format=""/><item type="0" name="保留" default="0" id="30802" 
+info="[1|1]" icon="1" format=""/><item type="0" name="校验和" default="0" 
+id="30803" info="[2|2]" icon="1" format="十六进制"/><item type="0" name="IP" 
+default="0" id="30804" info="[4|4]" icon="1" format=""/></property><property 
+type="32" name="ICMPv6封装" enable="0" icon="0"><item type="0" name="类型" 
+default="0" id="32001" info="[0|1]" format="" icon="1"/><item type="0" 
+name="代码" default="0" id="32002" info="[1|1]" 
+icon="1"><icon>1</icon></item><item type="0" name="校验和" default="FFFF" 
+id="32003" info="[2|2]" format="十六进制" icon="2"/><item type="0" name="保留" default="0" 
+id="32005" info="[4|4]" format="十六进制" icon="1"/><item type="2" 
+name="ICMPv6数据" default="0" info="[8|1456]" format="十六进制" icon="1" 
+id="32004"><argv value="196"/></item></property><property type="19" 
+name="OSPF封装" enable="0" icon="0"><item type="0" name="版本" default="0" 
+id="30700" info="[0|1]" icon="1" format=""/><item type="0" name="类型" 
+default="0" id="30701" info="[1|1]" icon="1" format=""/><item type="0" 
+name="报文长度" default="0" id="30702" info="[2|2]" icon="1" format=""/><item 
+type="0" name="路由IP" default="0" id="30703" info="[4|4]" icon="1" 
+format=""/><item type="0" name="区域ID" default="0" id="30704" info="[8|4]" 
+icon="1" format=""/><item type="0" name="校验和" default="0" id="30705" 
+info="[12|2]" icon="1" format="十六进制"/><item type="0" name="鉴别类型" 
+default="0" id="30706" info="[14|2]" icon="1" format="十六进制"/><item type="0" 
+name="鉴别内容" default="0" id="30707" info="[16|8]" icon="1" 
+format="字符串"/><item type="2" name="OSPF数据" default="0" id="30708" 
+info="[24|1456]" icon="1" format=""><argv 
+value="202"/></item></property><property type="46" name="OSPF_HELLO封装" 
+enable="0" icon="0"><item type="0" name="版本" default="2" id="10100" 
+info="[0|1]" icon="1" format=""/><item type="0" name="类型" default="1" 
+id="10101" info="[1|1]" icon="1" format=""/><item type="0" name="报文长度" 
+default="0" id="10102" info="[2|2]" icon="1" format=""/><item type="0" 
+name="路由IP" default="0" id="10103" info="[4|4]" icon="1" format=""/><item 
+type="0" name="区域ID" default="0" id="10104" info="[8|4]" icon="1" 
+format=""/><item type="0" name="校验和" default="0" id="10105" info="[12|2]" 
+icon="1" format="十六进制"/><item type="0" name="鉴别类型" default="0" 
+id="10106" info="[14|2]" icon="1" format="十六进制"/><item type="0" 
+name="鉴别内容" default="0" id="10107" info="[16|8]" icon="1" 
+format="字符串"/><item type="0" name="网络掩码" default="0" id="10108" 
+info="[24|4]" icon="7" format=""/><item type="0" name="hello时延" default="0" 
+id="10109" info="[28|2]" icon="1" format=""/><item type="0" name="选项" 
+default="0" id="10110" info="[30|1]" icon="1" format=""/><item type="0" 
+name="优先级" default="0" id="10111" info="[31|1]" icon="1" format=""/><item 
+type="0" name="路由器时延" default="0" id="10112" info="[32|4]" icon="1" 
+format="十六进制"/><item type="0" name="指定路由器" default="0" id="10113" info="[36|4]" 
+icon="7" format=""/><item type="0" name="备份路由器" default="0" id="10114" 
+info="[40|4]" icon="7" format=""/><item type="2" name="OSPF数据" default="0" 
+id="10115" info="[44|1436]" icon="1" format=""><argv 
+value="220"/></item></property><property type="47" name="OSPF_LSR封装" 
+enable="0" icon="0"><item type="0" name="版本" default="2" id="10200" 
+info="[0|1]" icon="1" format=""/><item type="0" name="类型" default="3" 
+id="10201" info="[1|1]" icon="1" format=""/><item type="0" name="报文长度" 
+default="0" id="10202" info="[2|2]" icon="1" format=""/><item type="0" 
+name="路由IP" default="0" id="10203" info="[4|4]" icon="1" format=""/><item 
+type="0" name="区域ID" default="0" id="10204" info="[8|4]" icon="1" 
+format=""/><item type="0" name="校验和" default="0" id="10205" info="[12|2]" 
+icon="1" format="十六进制"/><item type="0" name="鉴别类型" default="0" 
+id="10206" info="[14|2]" icon="1" format="十六进制"/><item type="0" 
+name="鉴别内容" default="0" id="10207" info="[16|8]" icon="1" 
+format="字符串"/><item type="2" name="OSPF数据" default="0" id="10208" 
+info="[24|1456]" icon="1" format=""><argv 
+value="221"/></item></property><property type="48" name="OSPF_ACK封装" 
+enable="0" icon="0"><item type="0" name="版本" default="2" id="10300" 
+info="[0|1]" icon="1" format=""/><item type="0" name="类型" default="5" 
+id="10301" info="[1|1]" icon="1" format=""/><item type="0" name="报文长度" 
+default="0" id="10302" info="[2|2]" icon="1" format=""/><item type="0" 
+name="路由IP" default="0" id="10303" info="[4|4]" icon="1" format=""/><item 
+type="0" name="区域ID" default="0" id="10304" info="[8|4]" icon="1" 
+format=""/><item type="0" name="校验和" default="0" id="10305" info="[12|2]" 
+icon="1" format="十六进制"/><item type="0" name="鉴别类型" default="0" 
+id="10306" info="[14|2]" icon="1" format="十六进制"/><item type="0" 
+name="鉴别内容" default="0" id="10307" info="[16|8]" icon="1" 
+format="字符串"/><item type="2" name="OSPF数据" default="0" id="10308" 
+info="[24|1456]" icon="1" format=""><argv 
+value="222"/></item></property><property type="49" name="OSPF_DBD封装" 
+enable="0" icon="0"><item type="0" name="版本" default="2" id="10400" 
+info="[0|1]" icon="1" format=""/><item type="0" name="类型" default="2" 
+id="10401" info="[1|1]" icon="1" format=""/><item type="0" name="报文长度" 
+default="0" id="10402" info="[2|2]" icon="1" format=""/><item type="0" 
+name="路由IP" default="0" id="10403" info="[4|4]" icon="1" format=""/><item 
+type="0" name="区域ID" default="0" id="10404" info="[8|4]" icon="1" 
+format=""/><item type="0" name="校验和" default="0" id="10405" info="[12|2]" 
+icon="1" format="十六进制"/><item type="0" name="鉴别类型" default="0" 
+id="10406" info="[14|2]" icon="1" format="十六进制"/><item type="0" 
+name="鉴别内容" default="0" id="10407" info="[16|8]" icon="1" 
+format="字符串"/><item type="0" name="接口MTU" default="0" id="10408" info="[24|2]" icon="1" format=""/><item type="0" name="可选项" default="0" id="10409" info="[26|1]" icon="1" format=""/><item type="0" name="flag项" default="0" id="10410" info="[27|1]" icon="1" format=""/><item type="0" name="DD序列号" default="0" id="10411" info="[28|4]" icon="1" format=""/><item type="2" name="OSPF数据" default="0" id="10412" 
+info="[32|1456]" icon="1" format=""><argv 
+value="223"/></item></property><property type="50" name="OSPF_LSU封装" 
+enable="0" icon="0"><item type="0" name="版本" default="2" id="10500" 
+info="[0|1]" icon="1" format=""/><item type="0" name="类型" default="4" 
+id="10501" info="[1|1]" icon="1" format=""/><item type="0" name="报文长度" 
+default="0" id="10502" info="[2|2]" icon="1" format=""/><item type="0" 
+name="路由IP" default="0" id="10503" info="[4|4]" icon="1" format=""/><item 
+type="0" name="区域ID" default="0" id="10504" info="[8|4]" icon="1" 
+format=""/><item type="0" name="校验和" default="0" id="10505" info="[12|2]" 
+icon="1" format="十六进制"/><item type="0" name="鉴别类型" default="0" 
+id="10506" info="[14|2]" icon="1" format="十六进制"/><item type="0" 
+name="鉴别内容" default="0" id="10507" info="[16|8]" icon="1" 
+format="字符串"/><item type="0" name="LSAS个数" default="0" id="10508" 
+info="[24|4]" icon="1" format="十六进制"/><item type="2" name="OSPF数据" default="0" 
+id="10509" info="[28|1456]" icon="1" format=""><argv 
+value="224"/></item></property><property type="37" name="自定义协议封装" 
+enable="0" icon="0"><item type="2" name="数据" default="0" id="32020" 
+info="[0|65521]" icon="1"><argv value="198"/></item></property><property 
+type="10" name="HTTP封装" enable="0" icon="0"><item type="2" name="命令" 
+default="0" id="30200" info="[0|1460]" icon="1"><argv 
+value="187"/></item></property><property type="13" name="TELNET封装" enable="0" 
+icon="0"><item type="2" name="命令" default="0" id="30410" info="[0|1460]" 
+icon="1"><argv value="194"/></item></property><property type="15" 
+name="POP3封装" enable="0" icon="0"><item type="2" name="命令" default="0" 
+id="30400" info="[0|1460]" icon="1"><argv 
+value="192"/></item></property><property type="11" name="FTP封装" enable="0" 
+icon="0"><item type="2" name="命令" default="0" id="30100" info="[0|1460]" 
+icon="1"><argv value="186"/></item></property><property type="8" name="DNS封装" 
+enable="0" icon="0"><item type="0" name="标识" default="FFFF" id="28677" 
+info="[0|2]" format="十六进制" icon="1"/><item type="0" name="代码和标志" 
+default="0" id="28678" info="[2|2]" format="十六进制" icon="3"/><item type="0" 
+name="问题数" default="1" id="28679" info="[4|2]" 
+icon="1"><icon>1</icon></item><item type="0" name="资源数" default="0" 
+id="28680" info="[6|2]" icon="1"><icon>1</icon></item><item type="0" 
+name="权威答案数" default="0" id="28681" info="[8|2]" 
+icon="1"><icon>1</icon></item><item type="0" name="附加答案数" default="0" 
+id="28682" info="[10|2]" icon="1"><icon>1</icon></item><item type="2" 
+name="DNS数据" default="0" id="32015" info="[12|1460]" icon="1"><argv 
+value="183"/><icon>1</icon></item></property><property type="16" name="SMTP封装" 
+enable="0" icon="0"><item type="2" name="命令" default="0" id="28692" 
+info="[0|1460]" icon="1"><argv value="200"/></item></property><property 
+type="12" name="SNMP封装" enable="0" icon="0"><item type="0" name="版本信息" 
+default="0" id="28693" info="[0|1]" format="" icon="1"/><item type="0" 
+name="共同体" default="0" id="28694" info="[1|32]" format="字符串" 
+icon="1"/><item type="0" name="PDU类型" default="0" id="28695" info="[33|1]" 
+icon="1"><icon/></item><item type="2" name="PDU数据" default="0" id="28696" 
+info="[34|1438]" icon="1"><argv value="182"/></item></property><property 
+type="22" name="NETBIOS数据封装" enable="0" icon="0"><item type="0" 
+name="消息类型" default="0" id="31000" info="[0|1]" icon="1"/><item type="0" 
+name="标记" default="0" id="31001" info="[1|1]" icon="1"/><item type="0" 
+name="标识" default="0" id="31002" info="[2|2]" icon="1"/><item type="0" 
+name="源IP" default="0.0.0.0" id="31003" info="[4|4]" icon="1"/><item type="0" 
+name="端口" default="0" id="31004" info="[8|2]" icon="1"/><item type="0" 
+name="数据报长" default="0" id="31005" info="[10|2]" icon="1"/><item type="0" 
+name="包偏移" default="0" id="31006" info="[12|2]" icon="1"/><item type="2" 
+name="追加数据" default="0" id="31007" info="[14|1456]" icon="1"><argv 
+value="206"/></item></property><property type="14" name="WINS封装" 
+enable="0" icon="0"><item type="0" name="事务标识" default="0" id="31111" 
+info="[0|2]" icon="1" format="十六进制"/><item type="0" name="操作编码" 
+default="0" id="31112" info="[2|1]" icon="1" format=""/><item type="0" 
+name="操作标志" default="0" id="31113" info="[2|2]" icon="1" format=""/><item 
+type="0" name="请求结果" default="0" id="31114" info="[3|1]" icon="1" 
+format=""/><item type="0" name="问题数" default="1" id="31115" info="[4|2]" 
+icon="1" format=""/><item type="0" name="答案数" default="0" id="31116" 
+info="[6|2]" icon="1" format=""/><item type="0" name="权威答案数" default="0" 
+id="31117" info="[8|2]" icon="1" format=""/><item type="0" name="附加答案数" 
+default="0" id="31118" info="[10|2]" icon="1" format=""/><item type="2" 
+name="问题数据" default="0" id="31119" info="[12|1448]" icon="1" format=""><argv 
+value="207"/></item></property><property type="21" name="NETBIOS会话封装" 
+enable="0" icon="0"><item type="0" name="消息类型" default="0" id="30900" 
+info="[0|1]" icon="1"/><item type="0" name="标记" default="0" id="30901" 
+info="[1|1]" icon="1"/><item type="0" name="数据报长度" default="0" id="30902" 
+info="[2|2]" icon="1"/><item type="2" name="追加数据" default="0" id="30903" 
+info="[4|1456]" icon="1"><argv value="205"/></item></property><property 
+type="17" name="IMAP封装" enable="0" icon="0"><item type="2" name="命令" 
+default="0" id="30300" info="[0|1460]" icon="1"><argv 
+value="192"/></item></property><property type="20" name="BOOTP封装" enable="0" 
+icon="0"><item type="0" name="操作码" default="0" id="30600" info="[0|1]" 
+icon="1" format=""/><item type="0" name="硬件类型" default="0" id="30601" 
+info="[1|1]　" icon="1" format=""/><item type="0" name="硬件地址长度" 
+default="0" id="30602" info="[2|1]" icon="1" format=""/><item type="0" 
+name="跳数" default="0" id="30603" info="[3|1]" icon="1" format=""/><item 
+type="0" name="事务标识" default="0" id="30604" info="[4|4]" icon="1" 
+format=""/><item type="0" name="秒数" default="0" id="30605" info="[8|2]" 
+icon="1" format=""/><item type="0" name="保留" default="0" id="30606" 
+info="[10|2]" icon="1" format=""/><item type="0" name="客户地址" default="0" 
+id="30607" info="[12|4]" icon="1" format=""/><item type="0" name="主机地址" 
+default="0" id="30608" info="[16|4]" icon="1" format=""/><item type="0" 
+name="服务器地址" default="0" id="30609" info="[20|4]" icon="1" format=""/><item 
+type="0" name="网关地址" default="0" id="30610" info="[24|4]" icon="1" 
+format=""/><item type="0" name="客户主机硬件地址" default="0" id="30611" 
+info="[28|16]" icon="1" format="十六进制"/><item type="0" name="服务器主机名" 
+default="0" id="30612" info="[44|64]" icon="1" format="字符串"/><item type="0" 
+name="引导文件名" default="0" id="30613" info="[108|128]" icon="1" 
+format="字符串"/><item type="0" name="厂商信息" default="0" id="30614" 
+info="[236|64]" icon="1" format="字符串"/></property><property type="9" 
+name="DHCP封装" enable="0" icon="0"><item type="0" name="操作码" default="0" id="30625" info="[0|1]" 
+icon="1" format=""/><item type="0" name="硬件类型" default="0" id="30626" 
+info="[1|1]　" icon="1" format=""/><item type="0" name="硬件地址长度" 
+default="0" id="30627" info="[2|1]" icon="1" format=""/><item type="0" 
+name="跳数" default="0" id="30628" info="[3|1]" icon="1" format=""/><item 
+type="0" name="事务标识" default="0" id="30629" info="[4|4]" icon="1" 
+format=""/><item type="0" name="秒数" default="0" id="30630" info="[8|2]" 
+icon="1" format=""/><item type="0" name="保留" default="0" id="30631" 
+info="[10|2]" icon="1" format=""/><item type="0" name="客户地址" default="0" 
+id="30632" info="[12|4]" icon="1" format=""/><item type="0" name="主机地址" 
+default="0" id="30633" info="[16|4]" icon="1" format=""/><item type="0" 
+name="服务器地址" default="0" id="30634" info="[20|4]" icon="1" format=""/><item 
+type="0" name="网关地址" default="0" id="30635" info="[24|4]" icon="1" 
+format=""/><item type="0" name="客户主机硬件地址" default="0" id="30636" 
+info="[28|16]" icon="1" format="十六进制"/><item type="0" name="服务器主机名" 
+default="0" id="30637" info="[44|64]" icon="1" format="字符串"/><item type="0" 
+name="引导文件名" default="0" id="30638" info="[108|128]" icon="1" 
+format="字符串"/><item type="0" name="事务标识" default="0" 
+id="30620" info="[236|4]" icon="1" format="十六进制"/><item type="0" 
+name="消息标签" default="0" id="30621" info="[240|1]　" icon="1" format=""/><item 
+type="0" name="消息长度" default="0" id="30622" info="[241|1]" icon="1" 
+format=""/><item type="0" name="消息类型" default="0" id="30623" info="[242|1]" 
+icon="1" format=""/><item type="2" name="数据" default="0" id="30624" 
+info="[243|1165]" icon="1" format=""><argv 
+value="204"/></item></property><property type="18" name="RIPV2封装" enable="0" 
+icon="0"><item type="0" name="命令" default="0" id="30500" info="[0|1]" icon="1" 
+format=""/><item type="0" name="版本信息" default="2" id="30501" info="[1|1]" 
+icon="1" format=""/><item type="0" name="路由域" default="0" id="30502" 
+info="[2|2]" icon="1" format=""/><item type="0" name="协议标志符" default="0" 
+id="30503" info="[4|2]" icon="1" format=""/><item type="0" name="路由标志" 
+default="0" id="30504" info="[6|2]" icon="1" format=""/><item type="0" 
+name="目标网络IP地址" default="0" id="30505" info="[8|4]" icon="1" 
+format=""/><item type="0" name="子网掩码" default="0" id="30506" info="[12|4]" 
+icon="1" format=""/><item type="0" name="下一网段" default="0" id="30507" 
+info="[16|4]" icon="1" format=""/><item type="0" name="度量值" default="0" 
+id="30508" info="[20|4]" icon="1" format="十六进制"/><item type="2" 
+name="第2~25条数据项" default="0" id="30509" info="[24|480]" icon="1" 
+format=""><argv value="203"/></item></property><property type="45" 
+name="RIPV1封装" enable="0" icon="0"><item type="0" name="命令" default="0" 
+id="10035" info="[0|1]" icon="1" format=""/><item type="0" name="版本信息" 
+default="1" id="10036" info="[1|1]" icon="1" format=""/><item type="0" 
+name="保留" default="0" id="10037" info="[2|2]" icon="1" format=""/><item 
+type="0" name="地址系列" default="2" id="10038" info="[4|2]" icon="1" 
+format=""/><item type="0" name="保留" default="0" id="10039" info="[6|2]" 
+icon="1" format=""/><item type="0" name="目标网络IP地址" default="0" id="10040" 
+info="[8|4]" icon="1" format=""/><item type="0" name="保留" default="0" 
+id="10041" info="[12|4]" icon="1" format=""/><item type="0" name="保留" 
+default="0" id="10042" info="[16|4]" icon="1" format=""/><item type="0" 
+name="度量值" default="0" id="10043" info="[20|4]" icon="1" 
+format="十六进制"/><item type="2" name="第2~25条数据项" default="0" id="10044" 
+info="[24|480]" icon="1" format=""><argv 
+value="213"/></item></property><property type="39" name="ICMP子网掩码封装" 
+enable="0" icon="0"><item type="0" name="类型" default="17" id="10000" 
+info="[0|1]" format="" icon="1"/><item type="0" name="代码" default="0" 
+id="10001" info="[1|1]" icon="1"><icon>1</icon></item><item type="0" 
+name="校验和" default="FFFF" id="10002" info="[2|2]" format="十六进制" 
+icon="2"/><item type="0" name="标识符" default="000000" id="10003" info="[4|2]" 
+format="" icon="1"/><item type="0" name="序列号" default="000000" id="10004" 
+info="[6|2]" format="" icon="1"/><item type="0" name="子网掩码" 
+default="0.0.0.0" info="[8|4]" format="" icon="7" 
+id="10005"/></property><property type="41" name="ICMP不可达封装" enable="0" 
+icon="0"><item type="0" name="类型" default="3" id="10014" info="[0|1]" 
+format="" icon="1"/><item type="0" name="代码" default="0" id="10015" 
+info="[1|1]" icon="1"><icon>1</icon></item><item type="0" name="校验和" 
+default="FFFF" id="10016" info="[2|2]" format="十六进制" icon="2"/><item 
+type="0" name="保留" default="00000000000" id="10017" info="[4|4]" 
+icon="1"/><item type="2" name="ICMP不可达数据部分" default="0" info="[8|68]" 
+format="十六进制" icon="1" id="10018"><argv 
+value="209"/></item></property><property type="42" name="ICMP超时封装" 
+enable="0" icon="0"><item type="0" name="类型" default="11" id="10019" 
+info="[0|1]" format="" icon="1"/><item type="0" name="代码" default="0" 
+id="10020" info="[1|1]" icon="1"><icon>1</icon></item><item type="0" 
+name="校验和" default="FFFF" id="10021" info="[2|2]" format="十六进制" 
+icon="2"/><item type="0" name="保留" default="00000000000" id="10022" 
+info="[4|4]" icon="1"/><item type="2" name="ICMP超时数据部分" default="0" 
+info="[8|68]" format="十六进制" icon="1" id="10023"><argv 
+value="210"/></item></property><property type="43" name="ICMP改变路由封装" 
+enable="0" icon="0"><item type="0" name="类型" default="5" id="10024" 
+info="[0|1]" format="" icon="1"/><item type="0" name="代码" default="0" 
+id="10025" info="[1|1]" icon="1"><icon>1</icon></item><item type="0" 
+name="校验和" default="FFFF" id="10026" info="[2|2]" format="十六进制" 
+icon="2"/><item type="0" name="目标路由器IP" default="0" id="10027" info="[4|4]" 
+icon="7"/><item type="2" name="ICMP改变路由数据部分" default="0" info="[8|68]" 
+format="十六进制" icon="1" id="10028"><argv 
+value="211"/></item></property><property type="44" name="ICMP回显封装" 
+enable="0" icon="0"><item type="0" name="类型" default="8" id="10029" 
+info="[0|1]" format="" icon="1"/><item type="0" name="代码" default="0" 
+id="10030" info="[1|1]" icon="1"><icon>1</icon></item><item type="0" 
+name="校验和" default="FFFF" id="10031" info="[2|2]" format="十六进制" 
+icon="2"/><item type="0" name="标识符" default="0" id="10032" info="[4|2]" 
+icon="1"/><item type="0" name="序列号" default="0" id="10033" info="[6|2]" 
+icon="1"/><item type="2" name="ICMP回显数据部分" default="0" info="[8|1472]" 
+format="十六进制" icon="1" id="10034"><argv 
+value="212"/></item>
+</property>
+<property type="51" name="PPPOE封装" enable="0" icon="0">
+<item type="0" name="版本" default="0" id="40001" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="类型" default="0" id="40002" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="代码" default="0" id="40003" info="[1|1]" icon="1" format="十六进制" ></item>
+<item type="0" name="会话ID" default="0" id="40004" info="[2|2]" icon="1" format="" ></item>
+<item type="0" name="长度" default="0" id="40005" info="[4|2]" icon="1" format="" ></item>
+</property><property type="52" name="PPP封装" enable="0" icon="0">
+<item type="0" name="类型" default="0" id="40100" info="[0|2]" icon="1" format="十六进制" ></item>
+</property><property type="53" name="LCP封装" enable="0" icon="0">
+<item type="0" name="代码" default="0" id="40101" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="标识" default="0" id="40102" info="[1|1]" icon="1" format="十六进制" ></item>
+<item type="0" name="长度" default="0" id="40103" info="[2|2]" icon="1" format="" ></item>
+<item type="2" name="数据" default="0" id="40104" info="[4|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property><property type="54" name="IPCP封装" enable="0" icon="0">
+<item type="0" name="代码" default="0" id="40401" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="标识" default="0" id="40402" info="[1|1]" icon="1" format="十六进制" ></item>
+<item type="0" name="长度" default="0" id="40403" info="[2|2]" icon="1" format="" ></item>
+<item type="2" name="数据" default="0" id="40404" info="[4|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="55" name="PAP封装" enable="0" icon="0">
+<item type="0" name="代码" default="0" id="40201" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="标识" default="0" id="40202" info="[1|1]" icon="1" format="十六进制" ></item>
+<item type="0" name="长度" default="0" id="40203" info="[2|2]" icon="1" format="" ></item>
+<item type="2" name="数据" default="0" id="40204" info="[4|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property><property type="56" name="CHAP封装" enable="0" icon="0">
+<item type="0" name="代码" default="0" id="40301" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="标识" default="0" id="40302" info="[1|1]" icon="1" format="十六进制" ></item>
+<item type="0" name="长度" default="0" id="40303" info="[2|2]" icon="1" format="" ></item>
+<item type="2" name="数据" default="0" id="40304" info="[4|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="27" name="VRRP封装" enable="0" icon="0">
+<item type="0" name="版本" default="0" id="40501" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="类型" default="0" id="40502" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="虚拟路由ID" default="0" id="40503" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="优先级" default="0" id="40504" info="[2|1]" icon="1" format="" ></item>
+<item type="0" name="地址个数" default="0" id="40505" info="[3|1]" icon="1" format="" ></item>
+<item type="0" name="认证类型" default="0" id="40506" info="[4|1]" icon="1" format="" ></item>
+<item type="0" name="间隔时间" default="0" id="40507" info="[5|1]" icon="1" format="" ></item>
+<item type="0" name="校验和" default="0" id="40508" info="[6|2]" icon="2" format="十六进制" ></item>
+<item type="2" name="数据" default="0" id="40509" info="[8|1456]" icon="1" format="十六进制" ><argv value="177"/></item>
+</property>
+<property type="57" name="802.1D封装" enable="0" icon="0">
+<item type="0" name="协议标志" default="0" id="40601" info="[0|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="版本" default="0" id="40602" info="[2|1]" icon="1" format="" ></item>
+<item type="0" name="消息类型" default="0" id="40603" info="[3|1]" icon="1" format="十六进制" ></item>
+<item type="0" name="标记" default="0" id="40604" info="[4|1]" icon="1" format="十六进制" ></item>
+<item type="0" name="根网桥ID" default="0000/00:00:00:00:00:00" id="40605" info="[5|8]" icon="1" format="十六进制" ></item>
+<item type="0" name="根路径开销" default="0" id="40606" info="[13|4]" icon="1" format="十六进制" ></item>
+<item type="0" name="网桥ID" default="0000/00:00:00:00:00:00" id="40607" info="[17|8]" icon="1" format="十六进制" ></item>
+<item type="0" name="端口ID" default="0" id="40608" info="[25|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="消息生存时间" default="0" id="40609" info="[27|2]" icon="1" format="" ></item>
+<item type="0" name="最大生存时间" default="0" id="40610" info="[29|2]" icon="1" format="" ></item>
+<item type="0" name="Hello周期" default="0" id="40611" info="[31|2]" icon="1" format="" ></item>
+<item type="0" name="转发延迟" default="0" id="40612" info="[33|2]" icon="1" format="" ></item>
+<item type="2" name="数据" default="0" id="40613" info="[35|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="64" name="Destination Unreachable封装" enable="0" icon="0">
+<item type="0" name="类型" default="1" id="40701" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="代码" default="0" id="40702" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="校验和" default="FFFF" id="40703" info="[2|2]" icon="2" format="十六进制" ></item>
+<item type="2" name="数据" default="0" id="40704" info="[8|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="59" name="Packet Too Big封装" enable="0" icon="0">
+<item type="0" name="类型" default="2" id="40801" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="代码" default="0" id="40802" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="校验和" default="FFFF" id="40803" info="[2|2]" icon="2" format="十六进制" ></item>
+<item type="0" name="MTU" default="0" id="40804" info="[4|4]" icon="1" format="" ></item>
+<item type="2" name="数据" default="0" id="40805" info="[8|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="60" name="Time Exceeded封装" enable="0" icon="0">
+<item type="0" name="类型" default="3" id="40901" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="代码" default="0" id="40902" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="校验和" default="FFFF" id="40903" info="[2|2]" icon="2" format="十六进制" ></item>
+<item type="2" name="数据" default="0" id="40904" info="[8|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="61" name="Parameter Problem封装" enable="0" icon="0">
+<item type="0" name="类型" default="4" id="41001" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="代码" default="0" id="41002" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="校验和" default="FFFF" id="41003" info="[2|2]" icon="2" format="十六进制" ></item>
+<item type="0" name="PPointer" default="0" id="41004" info="[4|4]" icon="1" format="十六进制" ></item>
+<item type="2" name="数据" default="0" id="41005" info="[8|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="62" name="Echo Request封装" enable="0" icon="0">
+<item type="0" name="类型" default="128" id="41101" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="代码" default="0" id="41102" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="校验和" default="FFFF" id="41103" info="[2|2]" icon="2" format="十六进制" ></item>
+<item type="0" name="ID" default="0" id="41104" info="[4|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="SEQ" default="0" id="41105" info="[6|2]" icon="1" format="十六进制" ></item>
+<item type="2" name="数据" default="0" id="41106" info="[8|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="63" name="Echo Reply封装" enable="0" icon="0">
+<item type="0" name="类型" default="129" id="41201" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="代码" default="0" id="41202" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="校验和" default="FFFF" id="41203" info="[2|2]" icon="2" format="十六进制" ></item>
+<item type="0" name="ID" default="0" id="41204" info="[4|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="SEQ" default="0" id="41205" info="[6|2]" icon="1" format="十六进制" ></item>
+<item type="2" name="数据" default="0" id="41206" info="[8|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="65" name="IPV6 RIP封装" enable="0" icon="0">
+<item type="0" name="命令" default="0" id="41301" info="[0|1]" icon="1" format=""></item>
+<item type="0" name="版本信息" default="0" id="41302" info="[1|1]" icon="1" format=""></item>
+<item type="2" name="数据" default="0" id="41304" info="[4|1456]" icon="1" format="十六进制" ><argv value="178"/></item>
+</property>
+<property type="66" name="OSPFv3_HELLO封装" enable="0" icon="0">
+<item type="0" name="版本" default="3" id="41401" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="类型" default="1" id="41402" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="报文长度" default="0" id="41403" info="[2|2]" icon="1" format="" ></item>
+<item type="0" name="路由IP" default="0" id="41404" info="[4|4]" icon="1" format="" ></item>
+<item type="0" name="区域ID" default="0" id="41405" info="[8|4]" icon="1" format="" ></item>
+<item type="0" name="校验和" default="0" id="41406" info="[12|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="实例ID" default="0" id="41407" info="[14|1]" icon="1" format="" ></item>
+<item type="0" name="接口ID" default="0" id="41415" info="[16|4]" icon="1" format="" ></item>
+<item type="0" name="优先级" default="0" id="41408" info="[20|1]" icon="1" format="" ></item>
+<item type="0" name="可选项" default="0" id="41409" info="[21|3]" icon="1" format="" ></item>
+<item type="0" name="hello时延" default="0" id="41410" info="[24|2]" icon="1" format="" ></item>
+<item type="0" name="路由器时延" default="0" id="41411" info="[26|2]" icon="1" format="" ></item>
+<item type="0" name="指定路由器" default="0" id="41412" info="[28|4]" icon="7" format="" ></item>
+<item type="0" name="备份路由器" default="0" id="41413" info="[32|4]" icon="7" format="" ></item>
+<item type="2" name="OSPF数据" default="0" id="41414" info="[36|1436]" icon="1" format=""><argv value="220"/></item>
+</property>
+<property type="67" name="OSPFv3_LSR封装" enable="0" icon="0">
+<item type="0" name="版本" default="3" id="41501" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="类型" default="3" id="41502" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="报文长度" default="0" id="41503" info="[2|2]" icon="1" format="" ></item>
+<item type="0" name="路由IP" default="0" id="41504" info="[4|4]" icon="1" format="" ></item>
+<item type="0" name="区域ID" default="0" id="41505" info="[8|4]" icon="1" format="" ></item>
+<item type="0" name="校验和" default="0" id="41506" info="[12|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="实例ID" default="0" id="41507" info="[14|1]" icon="1" format="" ></item>
+<item type="2" name="OSPF数据" default="0" id="41508" info="[16|1456]" icon="1" format=""><argv value="221"/></item>
+</property>
+<property type="68" name="OSPFv3_ACK封装" enable="0" icon="0">
+<item type="0" name="版本" default="3" id="41601" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="类型" default="5" id="41602" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="报文长度" default="0" id="41603" info="[2|2]" icon="1" format="" ></item>
+<item type="0" name="路由IP" default="0" id="41604" info="[4|4]" icon="1" format="" ></item>
+<item type="0" name="区域ID" default="0" id="41605" info="[8|4]" icon="1" format="" ></item>
+<item type="0" name="校验和" default="0" id="41606" info="[12|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="实例ID" default="0" id="41607" info="[14|1]" icon="1" format="" ></item>
+<item type="2" name="OSPF数据" default="0" id="41608" info="[16|1456]" icon="1" format=""><argv value="225"/></item>
+</property>
+<property type="69" name="OSPFv3_DBD封装" enable="0" icon="0">
+<item type="0" name="版本" default="3" id="41701" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="类型" default="2" id="41702" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="报文长度" default="0" id="41703" info="[2|2]" icon="1" format="" ></item>
+<item type="0" name="路由IP" default="0" id="41704" info="[4|4]" icon="1" format="" ></item>
+<item type="0" name="区域ID" default="0" id="41705" info="[8|4]" icon="1" format="" ></item>
+<item type="0" name="校验和" default="0" id="41706" info="[12|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="实例ID" default="0" id="41707" info="[14|1]" icon="1" format="" ></item>
+<item type="0" name="可选项" default="0" id="41708" info="[17|3]" icon="1" format="" ></item>
+<item type="0" name="接口MTU" default="0" id="41709" info="[20|2]" icon="1" format="" ></item>
+<item type="0" name="flag项" default="0" id="41710" info="[23|1]" icon="1" format="" ></item>
+<item type="0" name="DD序列号" default="0" id="41711" info="[24|4]" icon="1" format="十六进制" ></item>
+<item type="2" name="OSPF数据" default="0" id="41712" info="[28|1456]" icon="1" format=""><argv value="179"/></item>
+</property>
+<property type="70" name="OSPFv3_LSU封装" enable="0" icon="0">
+<item type="0" name="版本" default="3" id="41801" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="类型" default="4" id="41802" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="报文长度" default="0" id="41803" info="[2|2]" icon="1" format="" ></item>
+<item type="0" name="路由IP" default="0" id="41804" info="[4|4]" icon="1" format="" ></item>
+<item type="0" name="区域ID" default="0" id="41805" info="[8|4]" icon="1" format="" ></item>
+<item type="0" name="校验和" default="0" id="41806" info="[12|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="实例ID" default="0" id="41807" info="[14|1]" icon="1" format="" ></item>
+<item type="0" name="LSAS个数" default="0" id="41808" info="[16|4]" icon="1" format="十六进制" ></item>
+<item type="2" name="OSPF数据" default="0" id="41809" info="[20|1456]" icon="1" format=""><argv value="195"/></item>
+</property>
+<property type="71" name="IP6TO4封装" enable="0" icon="0">
+<item type="0" name="版本" default="6" id="41901" info="[0|4]" icon="1"></item>
+<item type="0" name="优先级" default="0" id="41902" info="[0|4]" icon="1"></item>
+<item type="0" name="流标号" default="0" id="41903" info="[0|4]" icon="1"></item>
+<item type="0" name="长度" default="61" id="41904" info="[4|2]" icon="1"></item>
+<item type="0" name="协议类型" default="0" id="41905" info="[6|1]" icon="1"></item>
+<item type="0" name="生存时间" default="0" id="41906" info="[7|1]" icon="1"></item>
+<item type="2" name="源IP地址" default="0.0.0.0" id="41907" info="[10|4]" icon="7" format=""><argv value="181" /></item>
+<item type="0" name="LSAID"  default="0" id="41908" info="[14|2]" icon="1" format="十六进制"></item>
+<item type="0" name="接口ID" default="0" id="41909" info="[16|8]" icon="1" format="字符串"></item>
+<item type="2" name="目的IP地址" default="0.0.0.0.0" id="41910" info="[26|4]" icon="7" format=""><argv value="181" /></item>
+<item type="0" name="LSAID" default="0" id="41911" info="[30|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="接口ID" default="0" id="41912" info="[32|8]" icon="1" format="字符串"></item>
+<item type="2" name="IP6TO4数据" default="0" id="41913" info="[40|1456]" icon="1" format=""><argv value="198"/></item>
+</property>
+<property type="25" name="RADIUS 封装" enable="0" icon="0">
+<item type="0" name="版本" default="0" id="42201" info="[0|1]" icon="1"></item>
+<item type="0" name="类型" default="0" id="42202" info="[1|1]" icon="1"></item>
+<item type="0" name="长度" default="0" id="42203" info="[2|2]" icon="1"></item>
+<item type="0" name="鉴定" default="0" id="42204" info="[4|16]" icon="1"></item>
+<item type="2" name="RADIUS数据" default="0" id="42205" info="[20|1456]" icon="1" format=""><argv value="198"/></item>
+</property>
+<property type="72" name="802.1X 封装" enable="0" icon="0">
+<item type="0" name="版本" default="0" id="42001" info="[0|1]" icon="1"></item>
+<item type="0" name="类型" default="0" id="42002" info="[1|1]" icon="1"></item>
+<item type="0" name="长度" default="0" id="42003" info="[2|2]" icon="1"></item>
+<item type="2" name="802.1X数据" default="0" id="42004" info="[4|1456]" icon="1" format=""><argv value="198"/></item>
+</property>
+<property type="73" name="PIM 封装" enable="0" icon="0">
+<item type="0" name="版本" default="0" id="42302" info="[0|1]" icon="1"></item>
+<item type="0" name="类型" default="0" id="42301" info="[0|1]" icon="1"></item>
+<item type="0" name="校验和" default="0" id="42304" info="[2|2]" icon="1"></item>
+<item type="2" name="PIM数据" default="0" id="42305" info="[4|1456]" icon="1" format=""><argv value="198"/></item>
+</property>
+<property type="74" name="L2TP 封装" enable="0" icon="0">
+<item type="2" name="L2TP数据" default="0" id="42401" info="[0|1456]" icon="1" format=""><argv value="227"/></item>
+</property>
+<property type="75" name="PPTP 封装" enable="0" icon="0">
+<item type="0" name="长度" default="0" id="42101" info="[0|2]" icon="1"></item>
+<item type="0" name="消息类型" default="0" id="42102" info="[2|2]" icon="1"></item>
+
+<item type="0" name="控制类型" default="0" id="42104" info="[8|2]" icon="1"></item>
+<item type="2" name="PPTP数据" default="0" id="42105" info="[12|1456]" icon="1" format=""><argv value="226"/></item>
+</property>
+
+
+<property type="76" name="ICMP6路由器请求封装" enable="0" icon="0">
+<item type="0" name="类型" default="133" id="42501" info="[0|1]" format="" icon="1"/>
+<item type="0" name="代码" default="0" id="42502" info="[1|1]" icon="1"><icon>1</icon></item>
+<item type="0" name="校验和" default="FFFF" id="42503" info="[2|2]" format="十六进制" icon="2"/>
+<item type="0" name="保留" default="0" id="42504" info="[4|4]" format="十六进制" icon="1"/>
+<item type="2" name="ICMPv6数据" default="0" info="[8|1456]" format="十六进制" icon="1" id="42505"><argv value="196"/></item>
+</property>
+
+<property type="77" name="ICMP6路由器通告封装" enable="0" icon="0">
+<item type="0" name="类型" default="134" id="42601" info="[0|1]" format="" icon="1"/>
+<item type="0" name="代码" default="0" id="42602" info="[1|1]" icon="1"><icon>1</icon></item>
+<item type="0" name="校验和" default="FFFF" id="42603" info="[2|2]" format="十六进制" icon="2"/>
+<item type="0" name="当前跳数限制" default="0" id="42604" info="[4|1]" format="" icon="1"/>
+<item type="0" name="M" default="0" id="42605" info="[5|1]" format="" icon="1"/>
+<item type="0" name="O" default="0" id="42606" info="[5|1]" format="" icon="1"/>
+<item type="0" name="生命周期" default="0" id="42607" info="[6|2]" format="" icon="1"/>
+<item type="0" name="可达时间" default="0" id="42608" info="[8|4]" format="" icon="1"/>
+<item type="0" name="定时器" default="0" id="42609" info="[12|4]" format="" icon="1"/>
+<item type="2" name="ICMPv6数据" default="0" info="[16|1456]" format="十六进制" icon="1" id="42610"><argv value="196"/></item>
+</property>
+
+<property type="78" name="ICMP6邻居请求封装" enable="0" icon="0">
+<item type="0" name="类型" default="135" id="42701" info="[0|1]" format="" icon="1"/>
+<item type="0" name="代码" default="0" id="42702" info="[1|1]" icon="1"><icon>1</icon></item>
+<item type="0" name="校验和" default="FFFF" id="42703" info="[2|2]" format="十六进制" icon="2"/>
+<item type="0" name="保留" default="0" id="42704" info="[4|4]" format="十六进制" icon="1"/>
+<item type="2" name="目标地址" default="0:0:0:0:0:0:0:0" id="42705" info="[8|16]" format="十六进制" icon="1"><argv value="181"/></item>
+<item type="2" name="ICMPv6数据" default="0" info="[24|1456]" format="十六进制" icon="1" id="42706"><argv value="196"/></item>
+</property>
+
+<property type="79" name="ICMP6邻居通告封装" enable="0" icon="0">
+<item type="0" name="类型" default="136" id="42801" info="[0|1]" format="" icon="1"/>
+<item type="0" name="代码" default="0" id="42802" info="[1|1]" icon="1"><icon>1</icon></item>
+<item type="0" name="校验和" default="FFFF" id="42803" info="[2|2]" format="十六进制" icon="2"/>
+<item type="0" name="R" default="0" id="42804" info="[4|1]" format="十六进制" icon="1"/>
+<item type="0" name="S" default="0" id="42805" info="[4|1]" format="十六进制" icon="1"/>
+<item type="0" name="O" default="0" id="42806" info="[4|1]" format="十六进制" icon="1"/>
+<item type="2" name="目标地址" default="0:0:0:0:0:0:0:0" id="42807" info="[8|16]" format="十六进制" icon="1"><argv value="181"/></item>
+<item type="2" name="ICMPv6数据" default="0" info="[24|1456]" format="十六进制" icon="1" id="42808"><argv value="196"/></item>
+</property>
+</propterties>

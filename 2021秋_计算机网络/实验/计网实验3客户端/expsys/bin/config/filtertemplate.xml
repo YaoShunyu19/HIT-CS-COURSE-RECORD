@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="gb2312"?>
+<filters>
+    
+<filter name="IP地址过滤器" creator="F785183C-FF60-4197-86F6-4430E3F76A72" pname="IP地址" type="0"><control id="1052" type="0"/><control id="1048" type="1718446448" typevalue="0.0.0.0"/></filter><filter name="MAC地址过滤器" creator="F785183C-FF60-4197-86F6-4430E3F76A73" pname="MAC地址" type="3"><control id="1052" type="0"/><control id="1048" type="1718446448" typevalue="00-00-00-00-00-00"/></filter><filter name="端口过滤器" creator="E4B74377-3FB2-4a8d-BB20-CF4C74A88BC2" pname="端口值" type="1"><control id="1052" type="0"/><control id="1048" type="1718448244" typevalue="0"/></filter><filter name="类型过滤器" creator="D3F61DC5-2EF7-4445-9B40-BD2465068058" pname="类型值" type="2"><control id="1050" type="1885566064"/></filter></filters>

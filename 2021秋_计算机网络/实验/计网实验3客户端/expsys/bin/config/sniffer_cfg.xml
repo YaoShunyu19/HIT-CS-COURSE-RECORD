@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<options>
+    <adapter name="{FA25A042-F1EA-4100-8026-9331D3648232}" mac="dCfq/HJi" ip="192.168.86.109" />
+    <activesvr host="1244036.1244036.1244036.1244036" port="10005" />
+    <savepacket value="0" />
+    <maxwindow value="1" />
+    <show value="1" />
+    <remove value="0" />
+    <maxpacket value="0" />
+    <catchsize value="16" />
+    <savepath value="" />
+    <maxvalue value="20000" />
+</options>

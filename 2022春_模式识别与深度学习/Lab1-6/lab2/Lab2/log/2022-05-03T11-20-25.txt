@@ -1,0 +1,200 @@
+Epoch: 1	 Iter: 108	 Valid accuracy: 11.2195%
+Epoch:[1/50] Batch: [108/216] loss = 4.1738 lr = 0.0001000 acc = 0.062
+Epoch: 1	 Iter: 216	 Valid accuracy: 22.3171%
+Epoch:[1/50] Batch: [216/216] loss = 4.8410 lr = 0.0001000 acc = 0.000
+Epoch: 2	 Iter: 108	 Valid accuracy: 27.1951%
+Epoch:[2/50] Batch: [108/216] loss = 3.2895 lr = 0.0001000 acc = 0.281
+Epoch: 2	 Iter: 216	 Valid accuracy: 30.1220%
+Epoch:[2/50] Batch: [216/216] loss = 3.4180 lr = 0.0001000 acc = 0.156
+Epoch: 3	 Iter: 108	 Valid accuracy: 29.0244%
+Epoch:[3/50] Batch: [108/216] loss = 3.9160 lr = 0.0001000 acc = 0.219
+Epoch: 3	 Iter: 216	 Valid accuracy: 34.8780%
+Epoch:[3/50] Batch: [216/216] loss = 3.0018 lr = 0.0001000 acc = 0.281
+Epoch: 4	 Iter: 108	 Valid accuracy: 37.5610%
+Epoch:[4/50] Batch: [108/216] loss = 3.0599 lr = 0.0001000 acc = 0.344
+Epoch: 4	 Iter: 216	 Valid accuracy: 38.9024%
+Epoch:[4/50] Batch: [216/216] loss = 2.7156 lr = 0.0001000 acc = 0.312
+Epoch: 5	 Iter: 108	 Valid accuracy: 37.6829%
+Epoch:[5/50] Batch: [108/216] loss = 2.7088 lr = 0.0001000 acc = 0.438
+Epoch: 5	 Iter: 216	 Valid accuracy: 37.9268%
+Epoch:[5/50] Batch: [216/216] loss = 1.9643 lr = 0.0001000 acc = 0.531
+Epoch: 6	 Iter: 108	 Valid accuracy: 43.2927%
+Epoch:[6/50] Batch: [108/216] loss = 3.0628 lr = 0.0001000 acc = 0.406
+Epoch: 6	 Iter: 216	 Valid accuracy: 47.6829%
+Epoch:[6/50] Batch: [216/216] loss = 2.2908 lr = 0.0001000 acc = 0.375
+Epoch: 7	 Iter: 108	 Valid accuracy: 47.1951%
+Epoch:[7/50] Batch: [108/216] loss = 2.3177 lr = 0.0001000 acc = 0.469
+Epoch: 7	 Iter: 216	 Valid accuracy: 48.4146%
+Epoch:[7/50] Batch: [216/216] loss = 1.8653 lr = 0.0001000 acc = 0.531
+Epoch: 8	 Iter: 108	 Valid accuracy: 49.3902%
+Epoch:[8/50] Batch: [108/216] loss = 2.0288 lr = 0.0001000 acc = 0.406
+Epoch: 8	 Iter: 216	 Valid accuracy: 49.7561%
+Epoch:[8/50] Batch: [216/216] loss = 2.3913 lr = 0.0001000 acc = 0.406
+Epoch: 9	 Iter: 108	 Valid accuracy: 53.0488%
+Epoch:[9/50] Batch: [108/216] loss = 2.1800 lr = 0.0001000 acc = 0.469
+Epoch: 9	 Iter: 216	 Valid accuracy: 50.8537%
+Epoch:[9/50] Batch: [216/216] loss = 1.8577 lr = 0.0001000 acc = 0.500
+Epoch: 10	 Iter: 108	 Valid accuracy: 54.8780%
+Epoch:[10/50] Batch: [108/216] loss = 1.8153 lr = 0.0001000 acc = 0.469
+Epoch: 10	 Iter: 216	 Valid accuracy: 53.2927%
+Epoch:[10/50] Batch: [216/216] loss = 1.9910 lr = 0.0001000 acc = 0.375
+Epoch: 11	 Iter: 108	 Valid accuracy: 54.5122%
+Epoch:[11/50] Batch: [108/216] loss = 1.5209 lr = 0.0001000 acc = 0.625
+Epoch: 11	 Iter: 216	 Valid accuracy: 56.4634%
+Epoch:[11/50] Batch: [216/216] loss = 2.0074 lr = 0.0001000 acc = 0.469
+Epoch: 12	 Iter: 108	 Valid accuracy: 58.4146%
+Epoch:[12/50] Batch: [108/216] loss = 1.8240 lr = 0.0001000 acc = 0.469
+Epoch: 12	 Iter: 216	 Valid accuracy: 58.6585%
+Epoch:[12/50] Batch: [216/216] loss = 0.9612 lr = 0.0001000 acc = 0.656
+Epoch: 13	 Iter: 108	 Valid accuracy: 58.7805%
+Epoch:[13/50] Batch: [108/216] loss = 0.9547 lr = 0.0000100 acc = 0.750
+Epoch: 13	 Iter: 216	 Valid accuracy: 58.1707%
+Epoch:[13/50] Batch: [216/216] loss = 1.3899 lr = 0.0000100 acc = 0.531
+Epoch: 14	 Iter: 108	 Valid accuracy: 61.2195%
+Epoch:[14/50] Batch: [108/216] loss = 1.3672 lr = 0.0000100 acc = 0.625
+Epoch: 14	 Iter: 216	 Valid accuracy: 57.1951%
+Epoch:[14/50] Batch: [216/216] loss = 1.1692 lr = 0.0000100 acc = 0.562
+Epoch: 15	 Iter: 108	 Valid accuracy: 57.8049%
+Epoch:[15/50] Batch: [108/216] loss = 2.0650 lr = 0.0000100 acc = 0.469
+Epoch: 15	 Iter: 216	 Valid accuracy: 58.1707%
+Epoch:[15/50] Batch: [216/216] loss = 0.6530 lr = 0.0000100 acc = 0.688
+Epoch: 16	 Iter: 108	 Valid accuracy: 59.8780%
+Epoch:[16/50] Batch: [108/216] loss = 0.9096 lr = 0.0000100 acc = 0.781
+Epoch: 16	 Iter: 216	 Valid accuracy: 58.6585%
+Epoch:[16/50] Batch: [216/216] loss = 0.7823 lr = 0.0000100 acc = 0.656
+Epoch: 17	 Iter: 108	 Valid accuracy: 59.1463%
+Epoch:[17/50] Batch: [108/216] loss = 1.3921 lr = 0.0000100 acc = 0.500
+Epoch: 17	 Iter: 216	 Valid accuracy: 58.2927%
+Epoch:[17/50] Batch: [216/216] loss = 0.9035 lr = 0.0000100 acc = 0.656
+Epoch: 18	 Iter: 108	 Valid accuracy: 58.0488%
+Epoch:[18/50] Batch: [108/216] loss = 1.4830 lr = 0.0000100 acc = 0.594
+Epoch: 18	 Iter: 216	 Valid accuracy: 58.6585%
+Epoch:[18/50] Batch: [216/216] loss = 0.4324 lr = 0.0000100 acc = 0.750
+Epoch: 19	 Iter: 108	 Valid accuracy: 61.9512%
+Epoch:[19/50] Batch: [108/216] loss = 1.9453 lr = 0.0000100 acc = 0.625
+Epoch: 19	 Iter: 216	 Valid accuracy: 57.8049%
+Epoch:[19/50] Batch: [216/216] loss = 1.2129 lr = 0.0000100 acc = 0.500
+Epoch: 20	 Iter: 108	 Valid accuracy: 56.7073%
+Epoch:[20/50] Batch: [108/216] loss = 0.4492 lr = 0.0000100 acc = 0.844
+Epoch: 20	 Iter: 216	 Valid accuracy: 60.7317%
+Epoch:[20/50] Batch: [216/216] loss = 0.7994 lr = 0.0000100 acc = 0.656
+Epoch: 21	 Iter: 108	 Valid accuracy: 59.1463%
+Epoch:[21/50] Batch: [108/216] loss = 1.6191 lr = 0.0000100 acc = 0.625
+Epoch: 21	 Iter: 216	 Valid accuracy: 60.9756%
+Epoch:[21/50] Batch: [216/216] loss = 0.7879 lr = 0.0000100 acc = 0.656
+Epoch: 22	 Iter: 108	 Valid accuracy: 63.2927%
+Epoch:[22/50] Batch: [108/216] loss = 1.7708 lr = 0.0000100 acc = 0.594
+Epoch: 22	 Iter: 216	 Valid accuracy: 61.2195%
+Epoch:[22/50] Batch: [216/216] loss = 0.5974 lr = 0.0000100 acc = 0.719
+Epoch: 23	 Iter: 108	 Valid accuracy: 61.2195%
+Epoch:[23/50] Batch: [108/216] loss = 1.3303 lr = 0.0000100 acc = 0.750
+Epoch: 23	 Iter: 216	 Valid accuracy: 62.4390%
+Epoch:[23/50] Batch: [216/216] loss = 0.9488 lr = 0.0000100 acc = 0.594
+Epoch: 24	 Iter: 108	 Valid accuracy: 60.3659%
+Epoch:[24/50] Batch: [108/216] loss = 1.4774 lr = 0.0000100 acc = 0.594
+Epoch: 24	 Iter: 216	 Valid accuracy: 60.8537%
+Epoch:[24/50] Batch: [216/216] loss = 1.0571 lr = 0.0000100 acc = 0.688
+Epoch: 25	 Iter: 108	 Valid accuracy: 58.9024%
+Epoch:[25/50] Batch: [108/216] loss = 0.9671 lr = 0.0000010 acc = 0.688
+Epoch: 25	 Iter: 216	 Valid accuracy: 63.2927%
+Epoch:[25/50] Batch: [216/216] loss = 0.9454 lr = 0.0000010 acc = 0.656
+Epoch: 26	 Iter: 108	 Valid accuracy: 58.7805%
+Epoch:[26/50] Batch: [108/216] loss = 1.7350 lr = 0.0000010 acc = 0.594
+Epoch: 26	 Iter: 216	 Valid accuracy: 62.8049%
+Epoch:[26/50] Batch: [216/216] loss = 1.1253 lr = 0.0000010 acc = 0.594
+Epoch: 27	 Iter: 108	 Valid accuracy: 60.9756%
+Epoch:[27/50] Batch: [108/216] loss = 2.0347 lr = 0.0000010 acc = 0.500
+Epoch: 27	 Iter: 216	 Valid accuracy: 61.9512%
+Epoch:[27/50] Batch: [216/216] loss = 0.6790 lr = 0.0000010 acc = 0.750
+Epoch: 28	 Iter: 108	 Valid accuracy: 62.6829%
+Epoch:[28/50] Batch: [108/216] loss = 1.6826 lr = 0.0000010 acc = 0.531
+Epoch: 28	 Iter: 216	 Valid accuracy: 57.9268%
+Epoch:[28/50] Batch: [216/216] loss = 1.0011 lr = 0.0000010 acc = 0.656
+Epoch: 29	 Iter: 108	 Valid accuracy: 61.4634%
+Epoch:[29/50] Batch: [108/216] loss = 1.0875 lr = 0.0000010 acc = 0.719
+Epoch: 29	 Iter: 216	 Valid accuracy: 59.6341%
+Epoch:[29/50] Batch: [216/216] loss = 0.7814 lr = 0.0000010 acc = 0.719
+Epoch: 30	 Iter: 108	 Valid accuracy: 60.8537%
+Epoch:[30/50] Batch: [108/216] loss = 1.5679 lr = 0.0000010 acc = 0.625
+Epoch: 30	 Iter: 216	 Valid accuracy: 59.2683%
+Epoch:[30/50] Batch: [216/216] loss = 0.4210 lr = 0.0000010 acc = 0.781
+Epoch: 31	 Iter: 108	 Valid accuracy: 65.4878%
+Epoch:[31/50] Batch: [108/216] loss = 1.9087 lr = 0.0000010 acc = 0.656
+Epoch: 31	 Iter: 216	 Valid accuracy: 59.0244%
+Epoch:[31/50] Batch: [216/216] loss = 1.3909 lr = 0.0000010 acc = 0.500
+Epoch: 32	 Iter: 108	 Valid accuracy: 59.2683%
+Epoch:[32/50] Batch: [108/216] loss = 1.3550 lr = 0.0000010 acc = 0.594
+Epoch: 32	 Iter: 216	 Valid accuracy: 64.2683%
+Epoch:[32/50] Batch: [216/216] loss = 1.4579 lr = 0.0000010 acc = 0.594
+Epoch: 33	 Iter: 108	 Valid accuracy: 61.4634%
+Epoch:[33/50] Batch: [108/216] loss = 1.2019 lr = 0.0000010 acc = 0.719
+Epoch: 33	 Iter: 216	 Valid accuracy: 60.8537%
+Epoch:[33/50] Batch: [216/216] loss = 1.0855 lr = 0.0000010 acc = 0.656
+Epoch: 34	 Iter: 108	 Valid accuracy: 63.2927%
+Epoch:[34/50] Batch: [108/216] loss = 1.0736 lr = 0.0000010 acc = 0.688
+Epoch: 34	 Iter: 216	 Valid accuracy: 61.3415%
+Epoch:[34/50] Batch: [216/216] loss = 0.5568 lr = 0.0000010 acc = 0.688
+Epoch: 35	 Iter: 108	 Valid accuracy: 62.9268%
+Epoch:[35/50] Batch: [108/216] loss = 0.9822 lr = 0.0000010 acc = 0.781
+Epoch: 35	 Iter: 216	 Valid accuracy: 62.6829%
+Epoch:[35/50] Batch: [216/216] loss = 0.7139 lr = 0.0000010 acc = 0.656
+Epoch: 36	 Iter: 108	 Valid accuracy: 64.5122%
+Epoch:[36/50] Batch: [108/216] loss = 1.0244 lr = 0.0000010 acc = 0.656
+Epoch: 36	 Iter: 216	 Valid accuracy: 62.1951%
+Epoch:[36/50] Batch: [216/216] loss = 0.6560 lr = 0.0000010 acc = 0.688
+Epoch: 37	 Iter: 108	 Valid accuracy: 61.0976%
+Epoch:[37/50] Batch: [108/216] loss = 1.8742 lr = 0.0000001 acc = 0.562
+Epoch: 37	 Iter: 216	 Valid accuracy: 59.1463%
+Epoch:[37/50] Batch: [216/216] loss = 1.0412 lr = 0.0000001 acc = 0.625
+Epoch: 38	 Iter: 108	 Valid accuracy: 61.2195%
+Epoch:[38/50] Batch: [108/216] loss = 0.9698 lr = 0.0000001 acc = 0.656
+Epoch: 38	 Iter: 216	 Valid accuracy: 61.0976%
+Epoch:[38/50] Batch: [216/216] loss = 0.9400 lr = 0.0000001 acc = 0.625
+Epoch: 39	 Iter: 108	 Valid accuracy: 60.0000%
+Epoch:[39/50] Batch: [108/216] loss = 1.6753 lr = 0.0000001 acc = 0.469
+Epoch: 39	 Iter: 216	 Valid accuracy: 61.0976%
+Epoch:[39/50] Batch: [216/216] loss = 0.6366 lr = 0.0000001 acc = 0.719
+Epoch: 40	 Iter: 108	 Valid accuracy: 60.3659%
+Epoch:[40/50] Batch: [108/216] loss = 1.1695 lr = 0.0000001 acc = 0.719
+Epoch: 40	 Iter: 216	 Valid accuracy: 63.2927%
+Epoch:[40/50] Batch: [216/216] loss = 0.6908 lr = 0.0000001 acc = 0.625
+Epoch: 41	 Iter: 108	 Valid accuracy: 62.0732%
+Epoch:[41/50] Batch: [108/216] loss = 1.6495 lr = 0.0000001 acc = 0.656
+Epoch: 41	 Iter: 216	 Valid accuracy: 63.1707%
+Epoch:[41/50] Batch: [216/216] loss = 1.1964 lr = 0.0000001 acc = 0.625
+Epoch: 42	 Iter: 108	 Valid accuracy: 61.5854%
+Epoch:[42/50] Batch: [108/216] loss = 1.2891 lr = 0.0000001 acc = 0.656
+Epoch: 42	 Iter: 216	 Valid accuracy: 62.5610%
+Epoch:[42/50] Batch: [216/216] loss = 0.9756 lr = 0.0000001 acc = 0.562
+Epoch: 43	 Iter: 108	 Valid accuracy: 62.9268%
+Epoch:[43/50] Batch: [108/216] loss = 1.4566 lr = 0.0000001 acc = 0.688
+Epoch: 43	 Iter: 216	 Valid accuracy: 61.0976%
+Epoch:[43/50] Batch: [216/216] loss = 0.5857 lr = 0.0000001 acc = 0.688
+Epoch: 44	 Iter: 108	 Valid accuracy: 57.5610%
+Epoch:[44/50] Batch: [108/216] loss = 1.0627 lr = 0.0000001 acc = 0.750
+Epoch: 44	 Iter: 216	 Valid accuracy: 59.0244%
+Epoch:[44/50] Batch: [216/216] loss = 0.6581 lr = 0.0000001 acc = 0.750
+Epoch: 45	 Iter: 108	 Valid accuracy: 58.0488%
+Epoch:[45/50] Batch: [108/216] loss = 1.3158 lr = 0.0000001 acc = 0.656
+Epoch: 45	 Iter: 216	 Valid accuracy: 58.4146%
+Epoch:[45/50] Batch: [216/216] loss = 0.8482 lr = 0.0000001 acc = 0.719
+Epoch: 46	 Iter: 108	 Valid accuracy: 62.4390%
+Epoch:[46/50] Batch: [108/216] loss = 1.1782 lr = 0.0000001 acc = 0.688
+Epoch: 46	 Iter: 216	 Valid accuracy: 61.8293%
+Epoch:[46/50] Batch: [216/216] loss = 0.9329 lr = 0.0000001 acc = 0.656
+Epoch: 47	 Iter: 108	 Valid accuracy: 60.0000%
+Epoch:[47/50] Batch: [108/216] loss = 1.1015 lr = 0.0000001 acc = 0.719
+Epoch: 47	 Iter: 216	 Valid accuracy: 60.0000%
+Epoch:[47/50] Batch: [216/216] loss = 0.3831 lr = 0.0000001 acc = 0.750
+Epoch: 48	 Iter: 108	 Valid accuracy: 64.1463%
+Epoch:[48/50] Batch: [108/216] loss = 1.5720 lr = 0.0000001 acc = 0.594
+Epoch: 48	 Iter: 216	 Valid accuracy: 63.2927%
+Epoch:[48/50] Batch: [216/216] loss = 0.7522 lr = 0.0000001 acc = 0.656
+Epoch: 49	 Iter: 108	 Valid accuracy: 62.8049%
+Epoch:[49/50] Batch: [108/216] loss = 1.2756 lr = 0.0000001 acc = 0.688
+Epoch: 49	 Iter: 216	 Valid accuracy: 61.7073%
+Epoch:[49/50] Batch: [216/216] loss = 0.8746 lr = 0.0000001 acc = 0.625
+Epoch: 50	 Iter: 108	 Valid accuracy: 61.0976%
+Epoch:[50/50] Batch: [108/216] loss = 1.4675 lr = 0.0000001 acc = 0.594
+Epoch: 50	 Iter: 216	 Valid accuracy: 59.3902%
+Epoch:[50/50] Batch: [216/216] loss = 0.7692 lr = 0.0000001 acc = 0.688

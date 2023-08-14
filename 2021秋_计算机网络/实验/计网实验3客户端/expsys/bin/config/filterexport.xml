@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<filters>
+    <filter type="1" name="端口过滤器" />
+    <filter type="0" name="IP地址过滤器" />
+    <filter type="2" name="类型过滤器" />
+    <filter type="3" name="MAC地址过滤器" />
+</filters>

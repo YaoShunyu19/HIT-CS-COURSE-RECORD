@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="gb2312"?>
+<theme>
+<hexeditertheme backcolor="16777215" default=" " fontname="Times New Roman" fontsize="13"><format color="16711680"/><format color="8388736"/><format color="16711935"/><format color="16711808"/><format color="16512"/></hexeditertheme>
+<toolbar autosize="0" buttonspace="0" buttonwidth="38" buttonheight="38" normaltextcolor="0,0,0" hottextcolor="16777215" graytextcolor="12632256" hotbuttoncolor="14600117" checkbuttoncolor="15196126" pushbuttoncolor="11899524" borderwidth="0" borderheight="0" hotbordercolor="Text" controlid="1000" maskcolor="16711935" background="">
+<button text="添加" image="add.bmp" command="32786" type="0" imagestyle="1" tiptext=""/>
+<button text="导入" image="import.bmp" command="32783" type="0" imagestyle="1" tiptext=""/>
+<button text="导出" image="export.bmp" command="32784" type="0" imagestyle="1" tiptext=""/>
+<button text="分割符" image="" command="" type="1" imagestyle="0" tiptext=""/>
+<button text="复制" image="copy.bmp" command="57634" type="0" imagestyle="1" tiptext=""/>
+<button text="粘贴" image="paste.bmp" command="57637" type="0" imagestyle="1" tiptext=""/>
+<button text="删除" image="delete.bmp" command="57632" type="0" imagestyle="1" tiptext=""/>
+<button text="分割符" image="" command="" type="1" imagestyle="0" tiptext=""/>
+<button text="全选" image="sendall.bmp" command="32792" type="0" imagestyle="1" tiptext=""/>
+<button text="上移" image="up.bmp" command="32788" type="0" imagestyle="1" tiptext=""/>
+<button text="下移" image="down.bmp" command="32789" type="0" imagestyle="1" tiptext=""/>
+<button text="分割符" image="" command="" type="1" imagestyle="0" tiptext=""/>
+<button text="设置" image="packetConfig.bmp" command="32804" type="0" imagestyle="1" tiptext=""/>
+<button text="校验和" image="checksum.bmp" command="32801" type="0" imagestyle="1" tiptext=""/>
+<button text="分割符" image="" command="" type="1" imagestyle="0" tiptext=""/>
+<button text="网卡" image="adapter.bmp" command="32793" type="0" imagestyle="1" tiptext=""/>
+<button text="发送" image="send.bmp" command="32791" type="0" imagestyle="1" tiptext=""/>
+<button text="分割符" image="" command="" type="1" imagestyle="0" tiptext=""/>
+<button text="关于" image="about.bmp" command="57664" type="0" imagestyle="1" tiptext=""/>
+</toolbar>
+<titlebartheme normalcolor="13684944" selectcolor="15196126" border="6579300" background=""/><menutheme background="16251129" iconwidth="16" iconheight="16" selectcolor="13811126" iconcolor="13752539" selectbordercolor="6956042" textcolor="0" hottextcolor="0" graytextcolor="13678005" checkimage="check.bmp" checkcolor="14539739"/><icons><icon id="1000" image="package.bmp" type="1"/><icon id="1001" image="editpanel.bmp" type="1"/><icon id="1002" image="hexedit.bmp" type="1"/><icon id="32783" image="import.bmp" type="1"/><icon id="32784" image="export.bmp" type="1"/><icon id="32786" image="add.bmp" type="1"/><icon id="32787" image="insert.bmp" type="1"/><icon id="32788" image="up.bmp" type="1"/><icon id="32789" image="down.bmp" type="1"/><icon id="32791" image="send.bmp" type="1"/><icon id="32792" image="sendall.bmp" type="1"/><icon id="32793" image="adapter.bmp" type="1"/><icon id="57664" image="about.bmp" type="1"/><icon id="57634" image="copy.bmp" type="1"/><icon id="57637" image="paste.bmp" type="1"/><icon id="57632" image="delete.bmp" type="1"/><icon id="32794" image="company.bmp" type="1"/><icon id="32801" image="checksum.bmp" type="1"/><icon id="32804" image="packetConfig.bmp" type="1"/><icon id="10" image="right.bmp" type="1"/><icon id="11" image="wrong.bmp" type="1"/><icon id="1" image="link.bmp" type="1"/><icon id="2" image="default.bmp" type="1"/><icon id="3" image="mac.bmp" type="1"/><icon id="4" image="flag.bmp" type="1"/><icon id="5" image="seqack.bmp" type="1"/><icon id="6" image="up.bmp" type="1"/><icon id="7" image="down.bmp" type="1"/><icon id="8" image="ip.bmp" type="1"/></icons><colors><color id="5" value="13684944" detail="Text"/><color id="6" value="10040136" detail="属性标题字体颜色"/><color id="7" value="13811126" detail="属性选择背景颜色"/><color id="8" value="32896" detail="属性名称颜色"/><color id="9" value="0" detail="属性值颜色"/><color id="10" value="14200727" detail="格式字体颜色"/><color id="11" value="39168" detail="偏移字体颜色"/><color id="12" value="16182243" detail="属性按钮背景"/><color id="13" value="12161911" detail="属性按钮边框"/><color id="14" value="15784909" detail="属性按钮背景(按下)"/><color id="15" value="12161911" detail="属性按钮边框(按下)"/><color id="16" value="5000268" detail="属性按钮文字"/></colors></theme>

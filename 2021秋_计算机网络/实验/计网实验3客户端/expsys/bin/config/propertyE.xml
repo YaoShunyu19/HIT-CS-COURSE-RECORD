@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="gb2312"?><propterties>
+
+<property type="0" name="Ethernet II" enable="0" icon="0">
+<item type="2" name="Destination Address" default="FF-FF-FF-FF-FF-FF" id="4096" info="[0|6]" format="十六进制" icon="2"><argv value="152"/></item>
+<item type="2" name="Source Address" default="00-00-00-00-00-00" id="4097" info="[6|6]" format="十六进制" icon="2"><argv value="152"/></item>
+<item type="0" name="Type" default="0800" id="4098" info="[12|2]" icon="1" format="十六进制">
+<argv value="0800" name="IP"/><argv value="0806" name="ARP"/><argv value="0835" name="RARP"/></item>
+</property>
+<property type="38" name="IEEE 802.3" enable="0" icon="0">
+<item type="2" name="Destination Address" default="FF-FF-FF-FF-FF-FF" id="32030" info="[0|6]" format="十六进制" icon="2"><argv value="152"/></item>
+<item type="2" name="Source Addresses" default="00-00-00-00-00-00" id="32031" info="[6|6]" format="十六进制" icon="2"><argv value="152"/></item>
+<item type="0" name="Length" default="" id="32032" info="[12|2]" icon="1" format=""/>
+</property>
+<property type="23" name="VLAN" enable="0" icon="0">
+<item type="0" name="User Priority" default="0" id="32011" info="[0|1]" icon="1"/>
+<item type="0" name="CFI" default="0" id="32012" info="[0|1]" format="" icon="1"/>
+<item type="0" name="VLAN ID" default="0" id="32013" info="[0|2]" icon="1"/>
+<item type="0" name="Length/Type" default="0800" id="32014" info="[2|2]" icon="1" format="十六进制"/>
+</property>
+<property type="1" name="IP" enable="0" icon="0">
+<item type="0" name="Version" default="4" id="8192" info="[0|1]" icon="1"/>
+<item type="0" name="IP Header Length" default="5" id="8193" info="[0|1]" icon="1"/>
+<item type="0" name="Type of Service" default="0" id="8194" info="[1|1]" format="十六进制" icon="1"/>
+<item type="0" name="Total Length" default="40" id="8195" info="[2|2]" icon="1"/>
+<item type="0" name="Identification" default="0000" id="8201" info="[4|2]" format="十六进制" icon="3"/>
+<item type="0" name="Flags" default="000" id="8196" info="[6|1]" format="" icon="1"/>
+<item type="0" name="Fragment Offset" default="000" id="8203" info="[6|2]" format="" icon="1"/>
+<item type="0" name="Time to Live" default="128" id="8202" info="[8|1]" icon="1"/>
+<item type="0" name="Protocol" default="6" id="8197" info="[9|1]" icon="1"/>
+<item type="0" name="Header Checksum" default="FFFF" id="8198" info="[10|2]" format="十六进制" icon="2"/>
+<item type="2" name="Source Address" default="127.0.0.1" id="8199" info="[12|4]" icon="7"><argv value="181"/></item>
+<item type="2" name="Destination Address" default="192.168.0.1" id="8200" info="[16|4]" icon="7"><argv value="181"/></item>
+</property>
+<property type="30" name="IPv6" enable="0" icon="0">
+<item type="0" name="Version" default="6" id="31100" info="[0|4]" icon="1"/>
+<item type="0" name="Priority" default="0" id="31101" info="[0|4]" icon="1"/>
+<item type="0" name="Flow Label" default="0" id="31102" info="[0|4]" icon="1"/>
+<item type="0" name="Payload Length" default="61" id="31103" info="[4|2]" icon="1"/>
+<item type="0" name="Next Header" default="0" id="31104" info="[6|1]" icon="1"/>
+<item type="0" name="Hop Limit" default="0" id="31105" info="[7|1]" icon="1"/>
+<item type="2" name="Source Address" default="0:0:0:0:0:0:0:0" id="31106" info="[8|16]" format="十六进制" icon="1"><argv value="181"/></item>
+<item type="2" name="Destination Address" default="0:0:0:0:0:0:0:0" id="31107" info="[24|16]" format="十六进制" icon="1"><argv value="181"/></item>
+</property>
+<property type="2" name="ARP" enable="0" icon="0">
+<item type="0" name="Hardware Type" default="1" id="24581" info="[0|2]" format="" icon="1"/>
+<item type="0" name="Protocol Type" default="0800" id="24582" info="[2|2]" format="十六进制" icon="1"/>
+<item type="0" name="Hardware Address Length" default="6" id="24583" info="[4|1]" icon="1"/>
+<item type="0" name="Protocol Address Length" default="4" id="24584" info="[5|1]" icon="1"/>
+<item type="0" name="Operation" default="1" id="24576" info="[6|2]" icon="1"><argv value="1" name="ARP请求"/><argv value="2" name="ARP应答"/></item>
+<item type="2" name="Sender Hardware Address" default="00-00-00-00-00-00" id="24577" info="[8|6]" format="十六进制" icon="2"><argv value="152"/></item>
+<item type="2" name="Sender Protocol Address" default="127.0.0.1" id="24578" info="[14|4]" icon="7"><argv value="181"/></item>
+<item type="2" name="Target Hardware Address" default="00-00-00-00-00-00" id="24579" info="[18|6]" format="十六进制" icon="2"><argv value="152"/></item>
+<item type="2" name="Target Protocol Address" default="192.168.0.1" id="24580" info="[24|4]" icon="7"><argv value="181"/></item>
+</property>
+<property type="3" name="RARP" enable="0" icon="0">
+<item type="0" name="Hardware Type" default="1" id="30005" info="[0|2]" format="" icon="1"/>
+<item type="0" name="Protocol Type" default="8035" id="30006" info="[2|2]" format="十六进制" icon="1"/>
+<item type="0" name="Hardware Address Length" default="6" id="30007" info="[4|1]" icon="1"/>
+<item type="0" name="Protocol Address Length" default="4" id="30008" info="[5|1]" icon="1"/>
+<item type="0" name="Operation" default="3" id="30000" info="[6|2]" icon="1"><argv value="3" name="RARP请求"/><argv value="4" name="RARP应答"/></item>
+<item type="2" name="Sender Hardware Address" default="00-00-00-00-00-00" id="30001" info="[8|6]" format="十六进制" icon="2"><argv value="152"/></item>
+<item type="2" name="Sender Protocol Address" default="127.0.0.1" id="30002" info="[14|4]" icon="7"><argv value="181"/></item>
+<item type="2" name="Target Hardware Address" default="FF-FF-FF-FF-FF-FF" id="30003" info="[18|6]" format="十六进制" icon="2"><argv value="152"/></item>
+<item type="2" name="Target Protocol Address" default="192.168.0.1" id="30004" info="[24|4]" icon="7"><argv value="181"/></item>
+</property>
+<property type="31" name="LLC" enable="0" icon="0">
+<item type="0" name="DSAP" default="00" id="28683" info="[0|1]" format="十六进制" icon="1"/>
+<item type="0" name="SSAP" default="00" id="28684" info="[1|1]" format="十六进制" icon="1"/>
+<item type="0" name="Control" default="0" id="28685" info="[2|1]" icon="1" format="十六进制"><icon>1</icon></item>
+</property>
+<property type="4" name="TCP" enable="0" icon="0">
+<item type="0" name="Source Port" default="1026" id="16384" info="[0|2]" format="" icon="1"/>
+<item type="0" name="Destination Port" default="80" id="16385" info="[2|2]" icon="1"><icon>1</icon></item>
+<item type="0" name="Sequence Number" default="0" id="16386" info="[4|4]" icon="4" format="十六进制"><icon>4</icon></item>
+<item type="0" name="Acknowledgment Number" default="0" id="16387" info="[8|4]" icon="4" format="十六进制"><icon>4</icon></item>
+<item type="0" name="Data Offset" default="5" id="16390" info="[12|1]" icon="1"><icon>1</icon></item>
+<item type="2" name="Control Bits" default="0" id="16388" info="[13|1]" format="十六进制" icon="3"><argv value="185"/></item>
+<item type="0" name="Window" default="0" id="16391" info="[14|2]" icon="1"><icon>1</icon></item>
+<item type="0" name="Checksum" default="FFFF" id="16389" info="[16|2]" format="十六进制" icon="2"/>
+<item type="0" name="Urgent Pointer" default="0" id="16392" info="[18|2]" icon="1"><icon>1</icon></item>
+</property>
+<property type="5" name="UDP" enable="0" icon="0">
+<item type="0" name="Source Port" default="1026" id="12288" info="[0|2]" format="" icon="1"/>
+<item type="0" name="Destination Port" default="137" id="12289" info="[2|2]" icon="1"/>
+<item type="0" name="Length" default="32" id="12291" info="[4|2]" icon="1"/>
+<item type="0" name="Checksum" default="FFFF" id="12290" info="[6|2]" format="十六进制" icon="2"/>
+</property>
+<property type="6" name="ICMP" enable="0" icon="0">
+<item type="0" name="Type" default="1" id="28672" info="[0|1]" format="" icon="1"/>
+<item type="0" name="Code" default="0" id="28673" info="[1|1]" icon="1"><icon>1</icon></item>
+<item type="0" name="Checksum" default="FFFF" id="28674" info="[2|2]" format="十六进制" icon="2"/>
+<item type="2" name="Data" default="0" info="[4|1476]" format="十六进制" icon="1" id="28675"><argv value="201"/></item>
+</property>
+<property type="40" name="ICMP Timestamp" enable="0" icon="0">
+<item type="0" name="Type" default="13" id="10006" info="[0|1]" format="" icon="1"/>
+<item type="0" name="Code" default="0" id="10007" info="[1|1]" icon="1"><icon>1</icon></item>
+<item type="0" name="Checksum" default="FFFF" id="10008" info="[2|2]" format="十六进制" icon="2"/>
+<item type="0" name="Identifier" default="000000" id="10009" info="[4|2]" format="" icon="1"/>
+<item type="0" name="Sequence number" default="000000" id="10010" info="[6|2]" format="" icon="1"/>
+<item type="0" name="Originate Timestamp" default="0000000000" id="10011" info="[8|4]" format="" icon="1"/>
+<item type="0" name="Receive Timestamp" default="0000000000" id="10012" info="[12|4]" format="" icon="1"/>
+<item type="0" name="Transmit Timestamp" default="0000000000" id="10013" info="[16|4]" format="" icon="1"/>
+</property>
+<property type="7" name="IGMPv1" enable="0" icon="0">
+<item type="0" name="Version" default="0" id="30800" info="[0|1]" icon="1" format=""/>
+<item type="0" name="Type" default="0" id="30801" info="[0|1]" icon="1" format=""/>
+<item type="0" name="Unused" default="0" id="30802" info="[1|1]" icon="1" format=""/>
+<item type="0" name="Checksum" default="0" id="30803" info="[2|2]" icon="1" format="十六进制"/>
+<item type="0" name="Group Address" default="0" id="30804" info="[4|4]" icon="1" format=""/>
+</property>
+<property type="32" name="ICMPv6" enable="0" icon="0">
+<item type="0" name="Type" default="0" id="32001" info="[0|1]" format="" icon="1"/>
+<item type="0" name="Code" default="0" id="32002" info="[1|1]" icon="1"><icon>1</icon></item>
+<item type="0" name="Checksum" default="FFFF" id="32003" info="[2|2]" format="十六进制" icon="2"/>
+<item type="0" name="保留" default="0" id="32005" info="[4|4]" format="十六进制" icon="1"/>
+<item type="2" name="Message Body" default="0" info="[8|1456]" format="十六进制" icon="1" id="32004"><argv value="196"/></item>
+</property>
+<property type="19" name="OSPF封装" enable="0" icon="0">
+<item type="0" name="Version" default="0" id="30700" info="[0|1]" icon="1" format=""/>
+<item type="0" name="Type" default="0" id="30701" info="[1|1]" icon="1" format=""/>
+<item type="0" name="Packet length" default="0" id="30702" info="[2|2]" icon="1" format=""/>
+<item type="0" name="Router ID" default="0" id="30703" info="[4|4]" icon="1" format=""/>
+<item type="0" name="Area ID" default="0" id="30704" info="[8|4]" icon="1" format=""/>
+<item type="0" name="Checksum" default="0" id="30705" info="[12|2]" icon="1" format="十六进制"/>
+<item type="0" name="AuType" default="0" id="30706" info="[14|2]" icon="1" format="十六进制"/>
+<item type="0" name="Authentication" default="0" id="30707" info="[16|8]" icon="1" format="字符串"/>
+<item type="2" name="Data" default="0" id="30708" info="[24|1456]" icon="1" format=""><argv value="202"/></item>
+</property>
+<property type="46" name="OSPF_HELLO" enable="0" icon="0">
+<item type="0" name="Version" default="2" id="10100" info="[0|1]" icon="1" format=""/>
+<item type="0" name="Type" default="1" id="10101" info="[1|1]" icon="1" format=""/>
+<item type="0" name="Packet length" default="0" id="10102" info="[2|2]" icon="1" format=""/>
+<item type="0" name="Router ID" default="0" id="10103" info="[4|4]" icon="1" format=""/>
+<item type="0" name="Area ID" default="0" id="10104" info="[8|4]" icon="1" format=""/>
+<item type="0" name="Checksum" default="0" id="10105" info="[12|2]" icon="1" format="十六进制"/>
+<item type="0" name="AuType" default="0" id="10106" info="[14|2]" icon="1" format="十六进制"/>
+<item type="0" name="Authentication" default="0" id="10107" info="[16|8]" icon="1" format="字符串"/>
+<item type="0" name="Network Mask" default="0" id="10108" info="[24|4]" icon="7" format=""/>
+<item type="0" name="HelloInterval" default="0" id="10109" info="[28|2]" icon="1" format=""/>
+<item type="0" name="Options" default="0" id="10110" info="[30|1]" icon="1" format=""/>
+<item type="0" name="Rtr Pri" default="0" id="10111" info="[31|1]" icon="1" format=""/>
+<item type="0" name="RouterDeadInterval" default="0" id="10112" info="[32|4]" icon="1" format="十六进制"/>
+<item type="0" name="Designated Router" default="0" id="10113" info="[36|4]" icon="7" format=""/>
+<item type="0" name="Backup Designated Router" default="0" id="10114" info="[40|4]" icon="7" format=""/>
+<item type="2" name="Data" default="0" id="10115" info="[44|1436]" icon="1" format=""><argv value="220"/></item>
+</property>
+<property type="47" name="OSPF_LSR" enable="0" icon="0">
+<item type="0" name="Version" default="2" id="10200" info="[0|1]" icon="1" format=""/>
+<item type="0" name="Type" default="3" id="10201" info="[1|1]" icon="1" format=""/>
+<item type="0" name="Packet length" default="0" id="10202" info="[2|2]" icon="1" format=""/>
+<item type="0" name="Router ID" default="0" id="10203" info="[4|4]" icon="1" format=""/>
+<item type="0" name="Area ID" default="0" id="10204" info="[8|4]" icon="1" format=""/>
+<item type="0" name="Checksum" default="0" id="10205" info="[12|2]" icon="1" format="十六进制"/>
+<item type="0" name="AuType" default="0" id="10206" info="[14|2]" icon="1" format="十六进制"/>
+<item type="0" name="Authentication" default="0" id="10207" info="[16|8]" icon="1" format="字符串"/>
+<item type="2" name="Data" default="0" id="10208" info="[24|1456]" icon="1" format=""><argv value="221"/></item>
+</property>
+<property type="48" name="OSPF_ACK" enable="0" icon="0">
+<item type="0" name="Version" default="2" id="10300" info="[0|1]" icon="1" format=""/>
+<item type="0" name="Type" default="5" id="10301" info="[1|1]" icon="1" format=""/>
+<item type="0" name="Packet length" default="0" id="10302" info="[2|2]" icon="1" format=""/>
+<item type="0" name="Router ID" default="0" id="10303" info="[4|4]" icon="1" format=""/>
+<item type="0" name="Area ID" default="0" id="10304" info="[8|4]" icon="1" format=""/>
+<item type="0" name="Checksum" default="0" id="10305" info="[12|2]" icon="1" format="十六进制"/>
+<item type="0" name="AuType" default="0" id="10306" info="[14|2]" icon="1" format="十六进制"/>
+<item type="0" name="Authentication" default="0" id="10307" info="[16|8]" icon="1" format="字符串"/>
+<item type="2" name="Data" default="0" id="10308" info="[24|1456]" icon="1" format=""><argv value="222"/></item>
+</property>
+<property type="49" name="OSPF_DBD" enable="0" icon="0">
+<item type="0" name="Version" default="2" id="10400" info="[0|1]" icon="1" format=""/>
+<item type="0" name="Type" default="2" id="10401" info="[1|1]" icon="1" format=""/>
+<item type="0" name="Packet length" default="0" id="10402" info="[2|2]" icon="1" format=""/>
+<item type="0" name="Router ID" default="0" id="10403" info="[4|4]" icon="1" format=""/>
+<item type="0" name="Area ID" default="0" id="10404" info="[8|4]" icon="1" format=""/>
+<item type="0" name="Checksum" default="0" id="10405" info="[12|2]" icon="1" format="十六进制"/>
+<item type="0" name="AuType" default="0" id="10406" info="[14|2]" icon="1" format="十六进制"/>
+<item type="0" name="Authentication" default="0" id="10407" info="[16|8]" icon="1" format="字符串"/>
+<item type="0" name="Interface MTU" default="0" id="10408" info="[24|2]" icon="1" format=""/>
+<item type="0" name="Options" default="0" id="10409" info="[26|1]" icon="1" format=""/>
+<item type="0" name="Flags" default="0" id="10410" info="[27|1]" icon="1" format=""/>
+<item type="0" name="DD sequence number" default="0" id="10411" info="[28|4]" icon="1" format=""/>
+<item type="2" name="Data" default="0" id="10412" info="[32|1456]" icon="1" format=""><argv value="223"/></item>
+</property>
+<property type="50" name="OSPF_LSU封装" enable="0" icon="0">
+<item type="0" name="Version" default="2" id="10500" info="[0|1]" icon="1" format=""/>
+<item type="0" name="Type" default="4" id="10501" info="[1|1]" icon="1" format=""/>
+<item type="0" name="Packet length" default="0" id="10502" info="[2|2]" icon="1" format=""/>
+<item type="0" name="Router ID" default="0" id="10503" info="[4|4]" icon="1" format=""/>
+<item type="0" name="Area ID" default="0" id="10504" info="[8|4]" icon="1" format=""/>
+<item type="0" name="Checksum" default="0" id="10505" info="[12|2]" icon="1" format="十六进制"/>
+<item type="0" name="AuType" default="0" id="10506" info="[14|2]" icon="1" format="十六进制"/>
+<item type="0" name="Authentication" default="0" id="10507" info="[16|8]" icon="1" format="字符串"/>
+<item type="0" name="The number of LSAs" default="0" id="10508" info="[24|4]" icon="1" format="十六进制"/>
+<item type="2" name="Data" default="0" id="10509" info="[28|1456]" icon="1" format=""><argv value="224"/></item>
+</property>
+<property type="37" name="user-defined" enable="0" icon="0">
+<item type="2" name="Data" default="0" id="32020" info="[0|65521]" icon="1"><argv value="198"/></item>
+</property>
+<property type="10" name="HTTP" enable="0" icon="0">
+<item type="2" name="command" default="0" id="30200" info="[0|1460]" icon="1"><argv value="187"/></item>
+</property>
+<property type="13" name="TELNET" enable="0" icon="0">
+<item type="2" name="command" default="0" id="30410" info="[0|1460]" icon="1"><argv value="194"/></item>
+</property>
+<property type="15" name="POP3" enable="0" icon="0">
+<item type="2" name="command" default="0" id="30400" info="[0|1460]" icon="1"><argv value="192"/></item>
+</property>
+<property type="11" name="FTP" enable="0" icon="0">
+<item type="2" name="command" default="0" id="30100" info="[0|1460]" icon="1"><argv value="186"/></item>
+</property>
+<property type="8" name="DNS" enable="0" icon="0">
+<item type="0" name="Identifier" default="FFFF" id="28677" info="[0|2]" format="十六进制" icon="1"/>
+<item type="0" name="Flags" default="0" id="28678" info="[2|2]" format="十六进制" icon="3"/>
+<item type="0" name="Question count" default="1" id="28679" info="[4|2]" icon="1"><icon>1</icon></item>
+<item type="0" name="Answer count" default="0" id="28680" info="[6|2]" icon="1"><icon>1</icon></item>
+<item type="0" name="Authority count" default="0" id="28681" info="[8|2]" icon="1"><icon>1</icon></item>
+<item type="0" name="Additional count" default="0" id="28682" info="[10|2]" icon="1"><icon>1</icon></item>
+<item type="2" name="Data" default="0" id="32015" info="[12|1460]" icon="1"><argv value="183"/><icon>1</icon></item>
+</property>
+<property type="16" name="SMTP" enable="0" icon="0">
+<item type="2" name="command" default="0" id="28692" info="[0|1460]" icon="1"><argv value="200"/></item>
+</property>
+<property type="12" name="SNMP" enable="0" icon="0">
+<item type="0" name="Version" default="0" id="28693" info="[0|1]" format="" icon="1"/>
+<item type="0" name="Community" default="0" id="28694" info="[1|32]" format="字符串" icon="1"/>
+<item type="0" name="Type" default="0" id="28695" info="[33|1]" icon="1"><icon/></item>
+<item type="2" name="Data" default="0" id="28696" info="[34|1438]" icon="1"><argv value="182"/></item>
+</property>
+<property type="22" name="Datagram Service" enable="0" icon="0">
+<item type="0" name="MSG_type" default="0" id="31000" info="[0|1]" icon="1"/>
+<item type="0" name="Flags" default="0" id="31001" info="[1|1]" icon="1"/>
+<item type="0" name="DGM_ID" default="0" id="31002" info="[2|2]" icon="1"/>
+<item type="0" name="Source IP" default="0.0.0.0" id="31003" info="[4|4]" icon="1"/>
+<item type="0" name="Source port" default="0" id="31004" info="[8|2]" icon="1"/>
+<item type="0" name="DGM_length" default="0" id="31005" info="[10|2]" icon="1"/>
+<item type="0" name="Packet offset" default="0" id="31006" info="[12|2]" icon="1"/>
+<item type="2" name="Trailer" default="0" id="31007" info="[14|1456]" icon="1"><argv value="206"/></item>
+</property>
+<property type="14" name="WINS" enable="0" icon="0">
+<item type="0" name="NAME_TRN_ID" default="0" id="31111" info="[0|2]" icon="1" format="十六进制"/>
+<item type="0" name="OPCODE" default="0" id="31112" info="[2|1]" icon="1" format=""/>
+<item type="0" name="NM_FLAGS" default="0" id="31113" info="[2|2]" icon="1" format=""/>
+<item type="0" name="RCODE" default="0" id="31114" info="[3|1]" icon="1" format=""/>
+<item type="0" name="QDCOUNT" default="1" id="31115" info="[4|2]" icon="1" format=""/>
+<item type="0" name="ANCOUNT" default="0" id="31116" info="[6|2]" icon="1" format=""/>
+<item type="0" name="NSCOUNT" default="0" id="31117" info="[8|2]" icon="1" format=""/>
+<item type="0" name="ARCOUNT" default="0" id="31118" info="[10|2]" icon="1" format=""/>
+<item type="2" name="Data" default="0" id="31119" info="[12|1448]" icon="1" format=""><argv value="207"/></item>
+</property>
+<property type="21" name="Session Service" enable="0" icon="0">
+<item type="0" name="Type" default="0" id="30900" info="[0|1]" icon="1"/>
+<item type="0" name="Flags" default="0" id="30901" info="[1|1]" icon="1"/>
+<item type="0" name="Length" default="0" id="30902" info="[2|2]" icon="1"/>
+<item type="2" name="Trailer" default="0" id="30903" info="[4|1456]" icon="1"><argv value="205"/></item>
+</property>
+<property type="17" name="IMAP" enable="0" icon="0">
+<item type="2" name="command" default="0" id="30300" info="[0|1460]" icon="1"><argv value="192"/></item>
+</property>
+<property type="20" name="BOOTP" enable="0" icon="0">
+<item type="0" name="Op" default="0" id="30600" info="[0|1]" icon="1" format=""/>
+<item type="0" name="Htype" default="0" id="30601" info="[1|1]　" icon="1" format=""/>
+<item type="0" name="Hlength" default="0" id="30602" info="[2|1]" icon="1" format=""/>
+<item type="0" name="Hops" default="0" id="30603" info="[3|1]" icon="1" format=""/>
+<item type="0" name="Xid" default="0" id="30604" info="[4|4]" icon="1" format=""/>
+<item type="0" name="Secs" default="0" id="30605" info="[8|2]" icon="1" format=""/>
+<item type="0" name="Flags" default="0" id="30606" info="[10|2]" icon="1" format=""/>
+<item type="0" name="Ciaddr" default="0" id="30607" info="[12|4]" icon="1" format=""/>
+<item type="0" name="Yiaddr" default="0" id="30608" info="[16|4]" icon="1" format=""/>
+<item type="0" name="Siaddr" default="0" id="30609" info="[20|4]" icon="1" format=""/>
+<item type="0" name="Giaddr" default="0" id="30610" info="[24|4]" icon="1" format=""/>
+<item type="0" name="Chaddr" default="0" id="30611" info="[28|16]" icon="1" format="十六进制"/>
+<item type="0" name="Sname" default="0" id="30612" info="[44|64]" icon="1" format="字符串"/>
+<item type="0" name="File" default="0" id="30613" info="[108|128]" icon="1" format="字符串"/>
+<item type="0" name="Options" default="0" id="30614" info="[236|64]" icon="1" format="字符串"/>
+</property>
+<property type="9" name="DHCP" enable="0" icon="0">
+<item type="0" name="Op" default="0" id="30625" info="[0|1]" icon="1" format=""/>
+<item type="0" name="Htype" default="0" id="30626" info="[1|1]　" icon="1" format=""/>
+<item type="0" name="Hlen" default="0" id="30627" info="[2|1]" icon="1" format=""/>
+<item type="0" name="Hops" default="0" id="30628" info="[3|1]" icon="1" format=""/>
+<item type="0" name="Xid" default="0" id="30629" info="[4|4]" icon="1" format=""/>
+<item type="0" name="Secs" default="0" id="30630" info="[8|2]" icon="1" format=""/>
+<item type="0" name="Flags" default="0" id="30631" info="[10|2]" icon="1" format=""/>
+<item type="0" name="Ciaddr" default="0" id="30632" info="[12|4]" icon="1" format=""/>
+<item type="0" name="Yiaddr" default="0" id="30633" info="[16|4]" icon="1" format=""/>
+<item type="0" name="Siaddr" default="0" id="30634" info="[20|4]" icon="1" format=""/>
+<item type="0" name="Giaddr" default="0" id="30635" info="[24|4]" icon="1" format=""/>
+<item type="0" name="Chaddr" default="0" id="30636" info="[28|16]" icon="1" format="十六进制"/>
+<item type="0" name="Sname" default="0" id="30637" info="[44|64]" icon="1" format="字符串"/>
+<item type="0" name="File" default="0" id="30638" info="[108|128]" icon="1" format="字符串"/>
+<item type="0" name="Magic Cookie" default="0" id="30620" info="[236|4]" icon="1" format="十六进制"/>
+<item type="0" name="Option" default="0" id="30621" info="[240|1]　" icon="1" format=""/>
+<item type="0" name="Length" default="0" id="30622" info="[241|1]" icon="1" format=""/>
+<item type="0" name="Value" default="0" id="30623" info="[242|1]" icon="1" format=""/>
+<item type="2" name="Data" default="0" id="30624" info="[243|1165]" icon="1" format=""><argv value="204"/></item>
+</property>
+<property type="18" name="RIPV2" enable="0" icon="0">
+<item type="0" name="command" default="0" id="30500" info="[0|1]" icon="1" format=""/>
+<item type="0" name="version" default="2" id="30501" info="[1|1]" icon="1" format=""/>
+<item type="0" name="Routing Domain" default="0" id="30502" info="[2|2]" icon="1" format=""/>
+<item type="0" name="Address Family Identifier" default="0" id="30503" info="[4|2]" icon="1" format=""/>
+<item type="0" name="Route Tag" default="0" id="30504" info="[6|2]" icon="1" format=""/>
+<item type="0" name="IP Address" default="0" id="30505" info="[8|4]" icon="1" format=""/>
+<item type="0" name="Subnet Mask" default="0" id="30506" info="[12|4]" icon="1" format=""/>
+<item type="0" name="Next Hop" default="0" id="30507" info="[16|4]" icon="1" format=""/>
+<item type="0" name="Metric" default="0" id="30508" info="[20|4]" icon="1" format="十六进制"/>
+<item type="2" name="Data" default="0" id="30509" info="[24|480]" icon="1" format=""><argv value="203"/></item>
+</property>
+<property type="45" name="RIPV1" enable="0" icon="0">
+<item type="0" name="command" default="0" id="10035" info="[0|1]" icon="1" format=""/>
+<item type="0" name="version" default="1" id="10036" info="[1|1]" icon="1" format=""/>
+<item type="0" name="must be zero" default="0" id="10037" info="[2|2]" icon="1" format=""/>
+<item type="0" name="address family identifier" default="2" id="10038" info="[4|2]" icon="1" format=""/>
+<item type="0" name="must be zero" default="0" id="10039" info="[6|2]" icon="1" format=""/>
+<item type="0" name="IP address" default="0" id="10040" info="[8|4]" icon="1" format=""/>
+<item type="0" name="must be zero" default="0" id="10041" info="[12|4]" icon="1" format=""/>
+<item type="0" name="must be zero" default="0" id="10042" info="[16|4]" icon="1" format=""/>
+<item type="0" name="metric" default="0" id="10043" info="[20|4]" icon="1" format="十六进制"/>
+<item type="2" name="Data" default="0" id="10044" info="[24|480]" icon="1" format=""><argv value="213"/></item>
+</property>
+<property type="39" name="ICMP Addrmask" enable="0" icon="0">
+<item type="0" name="Type" default="17" id="10000" info="[0|1]" format="" icon="1"/>
+<item type="0" name="Code" default="0" id="10001" info="[1|1]" icon="1"><icon>1</icon></item>
+<item type="0" name="Checksum" default="FFFF" id="10002" info="[2|2]" format="十六进制" icon="2"/>
+<item type="0" name="Identifier" default="000000" id="10003" info="[4|2]" format="" icon="1"/>
+<item type="0" name="Sequence number" default="000000" id="10004" info="[6|2]" format="" icon="1"/>
+<item type="0" name="Netmask" default="0.0.0.0" info="[8|4]" format="" icon="7" id="10005"/>
+</property>
+<property type="41" name="ICMP Unreachable" enable="0" icon="0">
+<item type="0" name="Type" default="3" id="10014" info="[0|1]" format="" icon="1"/>
+<item type="0" name="Code" default="0" id="10015" info="[1|1]" icon="1"><icon>1</icon></item>
+<item type="0" name="Checksum" default="FFFF" id="10016" info="[2|2]" format="十六进制" icon="2"/>
+<item type="0" name="Unused" default="00000000000" id="10017" info="[4|4]" icon="1"/>
+<item type="2" name="Data" default="0" info="[8|68]" format="十六进制" icon="1" id="10018"><argv value="209"/></item>
+</property>
+<property type="42" name="ICMP Time Exceeded" enable="0" icon="0">
+<item type="0" name="Type" default="11" id="10019" info="[0|1]" format="" icon="1"/>
+<item type="0" name="Code" default="0" id="10020" info="[1|1]" icon="1"><icon>1</icon></item>
+<item type="0" name="Checksum" default="FFFF" id="10021" info="[2|2]" format="十六进制" icon="2"/>
+<item type="0" name="Unused" default="00000000000" id="10022" info="[4|4]" icon="1"/>
+<item type="2" name="Data" default="0" info="[8|68]" format="十六进制" icon="1" id="10023"><argv value="210"/></item>
+</property>
+<property type="43" name="ICMP Redirect" enable="0" icon="0">
+<item type="0" name="Type" default="5" id="10024" info="[0|1]" format="" icon="1"/>
+<item type="0" name="Code" default="0" id="10025" info="[1|1]" icon="1"><icon>1</icon></item>
+<item type="0" name="Checksum" default="FFFF" id="10026" info="[2|2]" format="十六进制" icon="2"/>
+<item type="0" name="Gateway Internet Address" default="0" id="10027" info="[4|4]" icon="7"/>
+<item type="2" name="Data" default="0" info="[8|68]" format="十六进制" icon="1" id="10028"><argv value="211"/></item>
+</property>
+<property type="44" name="ICMP Echo" enable="0" icon="0">
+<item type="0" name="Type" default="8" id="10029" info="[0|1]" format="" icon="1"/>
+<item type="0" name="Code" default="0" id="10030" info="[1|1]" icon="1"><icon>1</icon></item>
+<item type="0" name="Checksum" default="FFFF" id="10031" info="[2|2]" format="十六进制" icon="2"/>
+<item type="0" name="Identifier" default="0" id="10032" info="[4|2]" icon="1"/>
+<item type="0" name="Sequence number" default="0" id="10033" info="[6|2]" icon="1"/>
+<item type="2" name="Data" default="0" info="[8|1472]" format="十六进制" icon="1" id="10034"><argv value="212"/></item>
+</property>
+<property type="51" name="PPPOE" enable="0" icon="0">
+<item type="0" name="Ver" default="0" id="40001" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Type" default="0" id="40002" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Code" default="0" id="40003" info="[1|1]" icon="1" format="十六进制" ></item>
+<item type="0" name="Session-ID" default="0" id="40004" info="[2|2]" icon="1" format="" ></item>
+<item type="0" name="Length" default="0" id="40005" info="[4|2]" icon="1" format="" ></item>
+</property>
+<property type="52" name="PPP" enable="0" icon="0">
+<item type="0" name="TAG_Type" default="0" id="40100" info="[0|2]" icon="1" format="十六进制" ></item>
+</property>
+<property type="53" name="LCP" enable="0" icon="0">
+<item type="0" name="Code" default="0" id="40101" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Identifier" default="0" id="40102" info="[1|1]" icon="1" format="十六进制" ></item>
+<item type="0" name="Length" default="0" id="40103" info="[2|2]" icon="1" format="" ></item>
+<item type="2" name="Data" default="0" id="40104" info="[4|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="54" name="IPCP" enable="0" icon="0">
+<item type="0" name="Code" default="0" id="40401" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Identifier" default="0" id="40402" info="[1|1]" icon="1" format="十六进制" ></item>
+<item type="0" name="Length" default="0" id="40403" info="[2|2]" icon="1" format="" ></item>
+<item type="2" name="Data" default="0" id="40404" info="[4|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="55" name="PAP" enable="0" icon="0">
+<item type="0" name="Code" default="0" id="40201" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Identifier" default="0" id="40202" info="[1|1]" icon="1" format="十六进制" ></item>
+<item type="0" name="Length" default="0" id="40203" info="[2|2]" icon="1" format="" ></item>
+<item type="2" name="Data" default="0" id="40204" info="[4|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="56" name="CHAP" enable="0" icon="0">
+<item type="0" name="Code" default="0" id="40301" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Identifier" default="0" id="40302" info="[1|1]" icon="1" format="十六进制" ></item>
+<item type="0" name="Length" default="0" id="40303" info="[2|2]" icon="1" format="" ></item>
+<item type="2" name="Data" default="0" id="40304" info="[4|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="27" name="VRRP" enable="0" icon="0">
+<item type="0" name="Version" default="0" id="40501" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Type" default="0" id="40502" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Virtual Rtr ID" default="0" id="40503" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="Priority" default="0" id="40504" info="[2|1]" icon="1" format="" ></item>
+<item type="0" name="Count IP Addresses" default="0" id="40505" info="[3|1]" icon="1" format="" ></item>
+<item type="0" name="Auth Type" default="0" id="40506" info="[4|1]" icon="1" format="" ></item>
+<item type="0" name="Advertisement Interval" default="0" id="40507" info="[5|1]" icon="1" format="" ></item>
+<item type="0" name="Checksum" default="0" id="40508" info="[6|2]" icon="2" format="十六进制" ></item>
+<item type="2" name="Data" default="0" id="40509" info="[8|1456]" icon="1" format="十六进制" ><argv value="177"/></item>
+</property>
+<property type="57" name="802.1D" enable="0" icon="0">
+<item type="0" name="Protocol ID" default="0" id="40601" info="[0|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="Version" default="0" id="40602" info="[2|1]" icon="1" format="" ></item>
+<item type="0" name="Type" default="0" id="40603" info="[3|1]" icon="1" format="十六进制" ></item>
+<item type="0" name="Flags" default="0" id="40604" info="[4|1]" icon="1" format="十六进制" ></item>
+<item type="0" name="ROOT-ID" default="0000/00:00:00:00:00:00" id="40605" info="[5|8]" icon="1" format="十六进制" ></item>
+<item type="0" name="Root Path Cost" default="0" id="40606" info="[13|4]" icon="1" format="十六进制" ></item>
+<item type="0" name="Sender BID" default="0000/00:00:00:00:00:00" id="40607" info="[17|8]" icon="1" format="十六进制" ></item>
+<item type="0" name="Port ID" default="0" id="40608" info="[25|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="Message Age" default="0" id="40609" info="[27|2]" icon="1" format="" ></item>
+<item type="0" name="Max Age" default="0" id="40610" info="[29|2]" icon="1" format="" ></item>
+<item type="0" name="Hello Time" default="0" id="40611" info="[31|2]" icon="1" format="" ></item>
+<item type="0" name="Forward Delay" default="0" id="40612" info="[33|2]" icon="1" format="" ></item>
+<item type="2" name="Data" default="0" id="40613" info="[35|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="64" name="Destination Unreachable" enable="0" icon="0">
+<item type="0" name="Type" default="1" id="40701" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Code" default="0" id="40702" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="Checksum" default="FFFF" id="40703" info="[2|2]" icon="2" format="十六进制" ></item>
+<item type="2" name="Data" default="0" id="40704" info="[8|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="59" name="Packet Too Big" enable="0" icon="0">
+<item type="0" name="Type" default="2" id="40801" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Code" default="0" id="40802" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="Checksum" default="FFFF" id="40803" info="[2|2]" icon="2" format="十六进制" ></item>
+<item type="0" name="MTU" default="0" id="40804" info="[4|4]" icon="1" format="" ></item>
+<item type="2" name="Data" default="0" id="40805" info="[8|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="60" name="Time Exceeded" enable="0" icon="0">
+<item type="0" name="Type" default="3" id="40901" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Code" default="0" id="40902" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="Checksum" default="FFFF" id="40903" info="[2|2]" icon="2" format="十六进制" ></item>
+<item type="2" name="Data" default="0" id="40904" info="[8|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="61" name="Parameter Problem" enable="0" icon="0">
+<item type="0" name="Type" default="4" id="41001" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Code" default="0" id="41002" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="Checksum" default="FFFF" id="41003" info="[2|2]" icon="2" format="十六进制" ></item>
+<item type="0" name="PPointer" default="0" id="41004" info="[4|4]" icon="1" format="十六进制" ></item>
+<item type="2" name="Data" default="0" id="41005" info="[8|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="62" name="Echo Request" enable="0" icon="0">
+<item type="0" name="Type" default="128" id="41101" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Code" default="0" id="41102" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="Checksum" default="FFFF" id="41103" info="[2|2]" icon="2" format="十六进制" ></item>
+<item type="0" name="Identifier" default="0" id="41104" info="[4|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="Sequence Number" default="0" id="41105" info="[6|2]" icon="1" format="十六进制" ></item>
+<item type="2" name="Data" default="0" id="41106" info="[8|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="63" name="Echo Reply" enable="0" icon="0">
+<item type="0" name="Type" default="129" id="41201" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Code" default="0" id="41202" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="Checksum" default="FFFF" id="41203" info="[2|2]" icon="2" format="十六进制" ></item>
+<item type="0" name="Identifier" default="0" id="41204" info="[4|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="Sequence Number" default="0" id="41205" info="[6|2]" icon="1" format="十六进制" ></item>
+<item type="2" name="Data" default="0" id="41206" info="[8|1456]" icon="1" format="十六进制" ><argv value="198"/></item>
+</property>
+<property type="65" name="IPV6 RIP" enable="0" icon="0">
+<item type="0" name="command" default="0" id="41301" info="[0|1]" icon="1" format=""></item>
+<item type="0" name="version" default="0" id="41302" info="[1|1]" icon="1" format=""></item>
+<item type="2" name="Data" default="0" id="41304" info="[4|1456]" icon="1" format="十六进制" ><argv value="178"/></item>
+</property>
+<property type="66" name="OSPFv3_HELLO" enable="0" icon="0">
+<item type="0" name="Version" default="3" id="41401" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Type" default="1" id="41402" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="Packet length" default="0" id="41403" info="[2|2]" icon="1" format="" ></item>
+<item type="0" name="Router ID" default="0" id="41404" info="[4|4]" icon="1" format="" ></item>
+<item type="0" name="Area ID" default="0" id="41405" info="[8|4]" icon="1" format="" ></item>
+<item type="0" name="Checksum" default="0" id="41406" info="[12|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="Instance ID" default="0" id="41407" info="[14|1]" icon="1" format="" ></item>
+<item type="0" name="Interface ID" default="0" id="41415" info="[16|4]" icon="1" format="" ></item>
+<item type="0" name="Rtr Pri" default="0" id="41408" info="[20|1]" icon="1" format="" ></item>
+<item type="0" name="Options" default="0" id="41409" info="[21|3]" icon="1" format="" ></item>
+<item type="0" name="HelloInterval" default="0" id="41410" info="[24|2]" icon="1" format="" ></item>
+<item type="0" name="RouterDeadInterval" default="0" id="41411" info="[26|2]" icon="1" format="" ></item>
+<item type="0" name="Designated Router ID" default="0" id="41412" info="[28|4]" icon="7" format="" ></item>
+<item type="0" name="Backup Designated Router ID" default="0" id="41413" info="[32|4]" icon="7" format="" ></item>
+<item type="2" name="Data" default="0" id="41414" info="[36|1436]" icon="1" format=""><argv value="220"/></item>
+</property>
+<property type="67" name="OSPFv3_LSR" enable="0" icon="0">
+<item type="0" name="Vertion" default="3" id="41501" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Type" default="3" id="41502" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="Packet length" default="0" id="41503" info="[2|2]" icon="1" format="" ></item>
+<item type="0" name="Router ID" default="0" id="41504" info="[4|4]" icon="1" format="" ></item>
+<item type="0" name="Area ID" default="0" id="41505" info="[8|4]" icon="1" format="" ></item>
+<item type="0" name="Checksum" default="0" id="41506" info="[12|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="Instance ID" default="0" id="41507" info="[14|1]" icon="1" format="" ></item>
+<item type="2" name="Data" default="0" id="41508" info="[16|1456]" icon="1" format=""><argv value="221"/></item>
+</property>
+<property type="68" name="OSPFv3_ACK" enable="0" icon="0">
+<item type="0" name="Vertion" default="3" id="41601" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Type" default="5" id="41602" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="Packet length" default="0" id="41603" info="[2|2]" icon="1" format="" ></item>
+<item type="0" name="Router ID" default="0" id="41604" info="[4|4]" icon="1" format="" ></item>
+<item type="0" name="Area ID" default="0" id="41605" info="[8|4]" icon="1" format="" ></item>
+<item type="0" name="Checksum" default="0" id="41606" info="[12|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="Instance ID" default="0" id="41607" info="[14|1]" icon="1" format="" ></item>
+<item type="2" name="Data" default="0" id="41608" info="[16|1456]" icon="1" format=""><argv value="225"/></item>
+</property>
+<property type="69" name="OSPFv3_DBD" enable="0" icon="0">
+<item type="0" name="Vertion" default="3" id="41701" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Type" default="2" id="41702" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="Packet length" default="0" id="41703" info="[2|2]" icon="1" format="" ></item>
+<item type="0" name="Router ID" default="0" id="41704" info="[4|4]" icon="1" format="" ></item>
+<item type="0" name="Area ID" default="0" id="41705" info="[8|4]" icon="1" format="" ></item>
+<item type="0" name="Checksum" default="0" id="41706" info="[12|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="Instance ID" default="0" id="41707" info="[14|1]" icon="1" format="" ></item>
+<item type="0" name="Options" default="0" id="41708" info="[17|3]" icon="1" format="" ></item>
+<item type="0" name="Interface MTU" default="0" id="41709" info="[20|2]" icon="1" format="" ></item>
+<item type="0" name="Flags" default="0" id="41710" info="[23|1]" icon="1" format="" ></item>
+<item type="0" name="DD sequence number" default="0" id="41711" info="[24|4]" icon="1" format="十六进制" ></item>
+<item type="2" name="Data" default="0" id="41712" info="[28|1456]" icon="1" format=""><argv value="179"/></item>
+</property>
+<property type="70" name="OSPFv3_LSU" enable="0" icon="0">
+<item type="0" name="Version" default="3" id="41801" info="[0|1]" icon="1" format="" ></item>
+<item type="0" name="Type" default="4" id="41802" info="[1|1]" icon="1" format="" ></item>
+<item type="0" name="Packet length" default="0" id="41803" info="[2|2]" icon="1" format="" ></item>
+<item type="0" name="Router ID" default="0" id="41804" info="[4|4]" icon="1" format="" ></item>
+<item type="0" name="Area ID" default="0" id="41805" info="[8|4]" icon="1" format="" ></item>
+<item type="0" name="Checksum" default="0" id="41806" info="[12|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="Instance ID" default="0" id="41807" info="[14|1]" icon="1" format="" ></item>
+<item type="0" name="Number of LSAs" default="0" id="41808" info="[16|4]" icon="1" format="十六进制" ></item>
+<item type="2" name="Data" default="0" id="41809" info="[20|1456]" icon="1" format=""><argv value="195"/></item>
+</property>
+<property type="71" name="IP6TO4" enable="0" icon="0">
+<item type="0" name="Version" default="6" id="41901" info="[0|4]" icon="1"></item>
+<item type="0" name="Priority" default="0" id="41902" info="[0|4]" icon="1"></item>
+<item type="0" name="Flow Label" default="0" id="41903" info="[0|4]" icon="1"></item>
+<item type="0" name="Payload Length" default="61" id="41904" info="[4|2]" icon="1"></item>
+<item type="0" name="Next Header" default="0" id="41905" info="[6|1]" icon="1"></item>
+<item type="0" name="Hop Limit" default="0" id="41906" info="[7|1]" icon="1"></item>
+<item type="2" name="Source Address" default="0.0.0.0" id="41907" info="[10|4]" icon="7" format=""><argv value="181" /></item>
+<item type="0" name="LSAID"  default="0" id="41908" info="[14|2]" icon="1" format="十六进制"></item>
+<item type="0" name="Interface ID" default="0" id="41909" info="[16|8]" icon="1" format="字符串"></item>
+<item type="2" name="Destination Address" default="0.0.0.0.0" id="41910" info="[26|4]" icon="7" format=""><argv value="181" /></item>
+<item type="0" name="LSAID" default="0" id="41911" info="[30|2]" icon="1" format="十六进制" ></item>
+<item type="0" name="Interface ID" default="0" id="41912" info="[32|8]" icon="1" format="字符串"></item>
+<item type="2" name="Data" default="0" id="41913" info="[40|1456]" icon="1" format=""><argv value="198"/></item>
+</property>
+<property type="25" name="RADIUS" enable="0" icon="0">
+<item type="0" name="Code" default="0" id="42201" info="[0|1]" icon="1"></item>
+<item type="0" name="Identifier" default="0" id="42202" info="[1|1]" icon="1"></item>
+<item type="0" name="Length" default="0" id="42203" info="[2|2]" icon="1"></item>
+<item type="0" name="Authenticator" default="0" id="42204" info="[4|16]" icon="1"></item>
+<item type="2" name="Data" default="0" id="42205" info="[20|1456]" icon="1" format=""><argv value="198"/></item>
+</property>
+<property type="72" name="802.1X" enable="0" icon="0">
+<item type="0" name="Vertion" default="0" id="42001" info="[0|1]" icon="1"></item>
+<item type="0" name="Type" default="0" id="42002" info="[1|1]" icon="1"></item>
+<item type="0" name="Length" default="0" id="42003" info="[2|2]" icon="1"></item>
+<item type="2" name="Data" default="0" id="42004" info="[4|1456]" icon="1" format=""><argv value="198"/></item>
+</property>
+<property type="73" name="PIM" enable="0" icon="0">
+<item type="0" name="PIM Ver" default="0" id="42302" info="[0|1]" icon="1"></item>
+<item type="0" name="Type" default="0" id="42301" info="[0|1]" icon="1"></item>
+<item type="0" name="Checksum" default="0" id="42304" info="[2|2]" icon="1"></item>
+<item type="2" name="Data" default="0" id="42305" info="[4|1456]" icon="1" format=""><argv value="198"/></item>
+</property>
+<property type="74" name="L2TP" enable="0" icon="0">
+<item type="2" name="Data" default="0" id="42401" info="[0|1456]" icon="1" format=""><argv value="227"/></item>
+</property>
+<property type="75" name="PPTP" enable="0" icon="0">
+<item type="0" name="Length" default="0" id="42101" info="[0|2]" icon="1"></item>
+<item type="0" name="Message Type" default="0" id="42102" info="[2|2]" icon="1"></item>
+
+<item type="0" name="Control Message Type" default="0" id="42104" info="[8|2]" icon="1"></item>
+<item type="2" name="Data" default="0" id="42105" info="[12|1456]" icon="1" format=""><argv value="226"/></item>
+</property>
+
+<property type="76" name="ICMP6_rouSolic" enable="0" icon="0">
+<item type="0" name="Type" default="0" id="42501" info="[0|1]" format="" icon="1"/>
+<item type="0" name="Code" default="0" id="42502" info="[1|1]" icon="1"><icon>1</icon></item>
+<item type="0" name="Checksum" default="FFFF" id="42503" info="[2|2]" format="十六进制" icon="2"/>
+<item type="0" name="keep" default="0" id="42504" info="[4|4]" format="十六进制" icon="1"/>
+<item type="2" name="Data" default="0" info="[8|1456]" format="十六进制" icon="1" id="42505"><argv value="196"/></item>
+</property>
+
+<property type="77" name="ICMP6_rouAdver" enable="0" icon="0">
+<item type="0" name="Type" default="0" id="42601" info="[0|1]" format="" icon="1"/>
+<item type="0" name="Code" default="0" id="42602" info="[1|1]" icon="1"><icon>1</icon></item>
+<item type="0" name="Checksum" default="FFFF" id="42603" info="[2|2]" format="十六进制" icon="2"/>
+<item type="0" name="curHopLimit" default="0" id="42604" info="[4|1]" format="" icon="1"/>
+<item type="0" name="M" default="0" id="42605" info="[5|1]" format="" icon="1"/>
+<item type="0" name="O" default="0" id="42606" info="[5|1]" format="" icon="1"/>
+<item type="0" name="RouLifeTime" default="0" id="42607" info="[6|2]" format="" icon="1"/>
+<item type="0" name="ReachTime" default="0" id="42608" info="[8|4]" format="" icon="1"/>
+<item type="0" name="ReachTimer" default="0" id="42609" info="[12|4]" format="" icon="1"/>
+<item type="2" name="Data" default="0" info="[16|1456]" format="十六进制" icon="1" id="42610"><argv value="196"/></item>
+</property>
+
+<property type="78" name="ICMP6_neiSolic" enable="0" icon="0">
+<item type="0" name="Type" default="0" id="42701" info="[0|1]" format="" icon="1"/>
+<item type="0" name="Code" default="0" id="42702" info="[1|1]" icon="1"><icon>1</icon></item>
+<item type="0" name="Checksum" default="FFFF" id="42703" info="[2|2]" format="十六进制" icon="2"/>
+<item type="0" name="keep" default="0" id="42704" info="[4|4]" format="十六进制" icon="1"/>
+<item type="2" name="DesAddress" default="0:0:0:0:0:0:0:0" id="42705" info="[8|16]" format="十六进制" icon="1"><argv value="181"/></item>
+<item type="2" name="Data" default="0" info="[24|1456]" format="十六进制" icon="1" id="42706"><argv value="196"/></item>
+</property>
+
+<property type="79" name="ICMP6_neiAdver" enable="0" icon="0">
+<item type="0" name="Type" default="0" id="42801" info="[0|1]" format="" icon="1"/>
+<item type="0" name="Code" default="0" id="42802" info="[1|1]" icon="1"><icon>1</icon></item>
+<item type="0" name="Checksum" default="FFFF" id="42803" info="[2|2]" format="十六进制" icon="2"/>
+<item type="0" name="R" default="0" id="42804" info="[4|1]" format="十六进制" icon="1"/>
+<item type="0" name="S" default="0" id="42805" info="[4|1]" format="十六进制" icon="1"/>
+<item type="0" name="O" default="0" id="42806" info="[4|1]" format="十六进制" icon="1"/>
+<item type="2" name="DesAddress" default="0:0:0:0:0:0:0:0" id="42807" info="[8|16]" format="十六进制" icon="1"><argv value="181"/></item>
+<item type="2" name="Data" default="0" info="[24|1456]" format="十六进制" icon="1" id="42808"><argv value="196"/></item>
+</property>
+</propterties>
